@@ -1,0 +1,1052 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="../support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>LUUP for Auto Shops — Turn loaner cars into a new revenue</title>
+  <meta name="description" content="$500 welcome bonus plus $25 for every referral — additional revenue for auto shops." />
+  <meta name="robots" content="noindex, nofollow" />
+  <link rel="canonical" href="https://luupnow.ca/autoshop/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="LUUP" />
+  <meta property="og:title" content="Turn Loaner Cars Into a New Revenue" />
+  <meta property="og:description" content="$500 welcome bonus plus $25 for every referral — additional revenue for auto shops." />
+  <meta property="og:image" content="https://luupnow.ca/autoshop/images/og-share.png" />
+  <meta property="og:image:secure_url" content="https://luupnow.ca/autoshop/images/og-share.png" />
+  <meta property="og:image:width" content="600" />
+  <meta property="og:image:height" content="600" />
+  <meta property="og:image:alt" content="LUUP for auto shops — keep your customers moving" />
+  <meta property="og:url" content="https://luupnow.ca/autoshop/" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Turn Loaner Cars Into a New Revenue" />
+  <meta name="twitter:description" content="$500 welcome bonus plus $25 for every referral — additional revenue for auto shops." />
+  <meta name="twitter:image" content="https://luupnow.ca/autoshop/images/og-share.png" />
+  <link rel="icon" href="images/Luup.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Roboto:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    html { scroll-behavior: smooth; }
+    @media print {
+      html, body { width: 1280px; }
+      header { position: static !important; background: #0B0B0B !important; }
+      header img { filter: brightness(0) invert(1) !important; }
+      header nav button, header nav { color: #fff !important; }
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+    @media (max-width: 1000px) { #how-it-works [data-hiw-grid] { grid-template-columns: repeat(2, minmax(0,1fr)) !important; } }
+    @media (max-width: 480px) { #how-it-works [data-hiw-grid] { grid-template-columns: 1fr !important; } }
+    @media (max-width: 560px) {
+      #how-it-works [data-hiw-cta] { flex-direction: column; align-items: stretch; max-width: 380px; margin-left: auto; margin-right: auto; }
+      #how-it-works [data-hiw-cta] button { width: 100%; text-align: center; }
+      #how-it-works [data-hiw-qr] { flex-direction: column; text-align: center; gap: 14px; }
+    }
+    @media (max-width: 900px) { #why-luup [data-why-grid] { grid-template-columns: repeat(2, minmax(0,1fr)) !important; } }
+    @media (max-width: 560px) { #why-luup [data-why-grid] { grid-template-columns: 1fr !important; } }
+    @media (max-width: 900px) { [data-cov-grid] { grid-template-columns: repeat(2, minmax(0,1fr)) !important; } }
+    @media (max-width: 560px) { [data-cov-grid] { grid-template-columns: 1fr !important; } }
+    body { margin: 0; font-family: 'Roboto', -apple-system, BlinkMacSystemFont, sans-serif; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+    a { color: #12557C; }
+    a:hover { color: #0E4363; }
+    *:focus-visible { outline: 2px solid #12557C !important; outline-offset: 2px; }
+    input, select, button, textarea { font-family: inherit; }
+  </style>
+<template id="__bundler_thumbnail" data-bg-color="#0B0B0B">
+  <svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+    <rect width="1200" height="800" fill="#0B0B0B"/>
+    <text x="600" y="380" font-family="sans-serif" font-weight="800" font-size="140" fill="#ffffff" text-anchor="middle">LUUP</text>
+    <rect x="500" y="460" width="200" height="60" rx="30" fill="#FF6A3D"/>
+  </svg>
+</template>
+  <meta name="facebook-domain-verification" content="9fet6vb4tbm9g9sc4lm9bou29tb133" />
+  <!-- LUUP analytics: GA4 + Google Ads + Meta Pixel + Mixpanel + UTM capture.
+       All IDs live in ../analytics.js — edit there, not here. Fires only on luupnow.ca. -->
+  <script src="../analytics.js"></script>
+</helmet>
+<a href="#hero-heading" style="position:absolute;left:-9999px;top:auto;background:#fff;color:#444444;padding:12px 20px;border-radius:8px;z-index:200;font-size:14px;font-weight:600;" style-focus="position:fixed;left:16px;top:16px;left:16px;">Skip to content</a>
+
+<header ref="{{headerRef}}" style="position:{{headerPosition}};top:0;left:0;right:0;z-index:100;background:{{headerBg}};backdrop-filter:{{headerBlur}};border-bottom:{{headerBorderStyle}};transition:background .25s ease, border-color .25s ease;">
+  <div style="max-width:1200px;margin:0 auto;padding:14px clamp(20px,5vw,64px);display:flex;align-items:center;justify-content:space-between;gap:24px;">
+    <a href="#top" aria-label="Luup home" style="display:flex;align-items:center;">
+      <img src="{{logoSrc}}" alt="Luup" style="width:{{logoWidth}};height:auto;max-height:56px;display:block;object-fit:contain;filter:{{logoFilter}};transition:filter .25s ease;" />
+    </a>
+    <nav aria-label="Primary" style="display:{{navDisplay}};align-items:center;gap:32px;">
+      <sc-for list="{{navItems}}" as="item" hint-placeholder-count="3">
+        <button type="button" onClick="{{item.onClick}}" style="background:none;border:none;padding:6px 0;font-size:15px;font-weight:600;font-family:'Plus Jakarta Sans',sans-serif;color:{{navTextColor}};cursor:pointer;transition:color .25s ease;" style-hover="color:#FF6A3D;">{{item.labelEl}}</button>
+      </sc-for>
+      <button type="button" onClick="{{onNavInterested}}" style="background:#FF6A3D;color:#fff;border:none;padding:12px 22px;border-radius:{{ctaRadius}};font-size:14.5px;font-weight:700;font-family:'Plus Jakarta Sans',sans-serif;cursor:pointer;transition:transform .2s ease, background .2s ease;" style-hover="background:#FF8A57;transform:translateY(-1px);">{{navCtaLabel}}</button>
+    </nav>
+    <button type="button" aria-label="Toggle menu" aria-expanded="{{mobileMenuOpen}}" onClick="{{toggleMobileMenu}}" style="display:{{hamburgerDisplay}};background:none;border:1px solid {{hamburgerBorderColor}};border-radius:8px;width:44px;height:44px;align-items:center;justify-content:center;cursor:pointer;color:{{navTextColor}};transition:color .25s ease, border-color .25s ease;">
+      {{menuIconEl}}
+    </button>
+  </div>
+  <sc-if value="{{mobileMenuOpen}}" hint-placeholder-val="{{false}}">
+    <div style="display:flex;flex-direction:column;padding:4px clamp(20px,5vw,64px) 20px;gap:0;border-top:1px solid rgba(255,255,255,0.15);background:#0B0B0B;">
+      <sc-for list="{{navItems}}" as="item" hint-placeholder-count="3">
+        <button type="button" onClick="{{item.onClick}}" style="background:none;border:none;text-align:left;padding:14px 4px;font-size:16px;font-weight:500;color:#fff;cursor:pointer;border-bottom:1px solid #EEEEEE;min-height:44px;">{{item.labelEl}}</button>
+      </sc-for>
+      <button type="button" onClick="{{onNavInterestedMobile}}" style="margin-top:12px;background:#FF6A3D;color:#0B0B0B;border:none;padding:14px 22px;border-radius:{{ctaRadius}};font-size:16px;font-weight:700;font-family:'Plus Jakarta Sans',sans-serif;cursor:pointer;min-height:48px;">{{navCtaLabel}}</button>
+    </div>
+  </sc-if>
+</header>
+
+<section id="top" style="{{heroSectionStyle}}">
+  <img src="{{heroImage}}" alt="{{heroImageAlt}}" fetchpriority="high" style="{{heroImgStyle}} filter:brightness(1.03) saturate(1.08) contrast(1.03);" />
+  <div style="{{heroOverlayStyle}}"></div>
+  <div style="{{heroContentWrapStyle}}">
+    <div style="max-width:560px;">
+      <div style="display:flex;margin:0 0 16px;">
+        <span style="display:inline-flex;align-items:center;gap:8px;padding:7px 14px 7px 12px;border-radius:999px;background:#fff;border:1px solid #E3E3E3;box-shadow:0 1px 2px rgba(0,0,0,0.04);font-family:'Plus Jakarta Sans',sans-serif;font-size:13px;font-weight:600;color:#1A1A1A;white-space:nowrap;">
+          <img src="images/Flag_of_Canada.svg" alt="" aria-hidden="true" style="display:block;width:24px;height:12px;" />
+          Proudly Canadian
+        </span>
+      </div>
+      <h1 id="hero-heading" style="font-size:clamp(32px,5vw,56px);line-height:1.08;font-weight:800;font-family:'Plus Jakarta Sans',sans-serif;color:{{heroTextColor}};margin:0 0 20px;letter-spacing:-0.02em;">{{hero.headlineLead}}<br />{{hero.headlineHighlight}}</h1>
+      <div style="display:flex;flex-wrap:wrap;gap:10px;margin:0 0 24px;max-width:480px;">
+        <div style="display:flex;gap:10px;align-items:center;background:#1E1E1E;border:1px solid rgba(255,106,61,0.35);border-radius:8px;padding:9px 16px 9px 10px;">
+          <span style="flex:none;width:28px;height:28px;border-radius:999px;background:#FF6A3D;color:#fff;display:flex;align-items:center;justify-content:center;">{{offerIconEl}}</span>
+          <span style="font-size:15px;line-height:1;color:#fff;font-weight:600;white-space:nowrap;"><strong style="font-weight:800;color:#FF6A3D;font-size:17px;">$500</strong> welcome bonus</span>
+        </div>
+        <div style="display:flex;gap:10px;align-items:center;background:#1E1E1E;border:1px solid rgba(255,106,61,0.35);border-radius:8px;padding:9px 16px 9px 10px;">
+          <span style="flex:none;width:28px;height:28px;border-radius:999px;background:#FF6A3D;color:#fff;display:flex;align-items:center;justify-content:center;">{{referralIconEl}}</span>
+          <span style="font-size:15px;line-height:1;color:#fff;font-weight:600;white-space:nowrap;"><strong style="font-weight:800;color:#FF6A3D;font-size:17px;">$25</strong> referral fee</span>
+        </div>
+      </div>
+      <p style="font-size:clamp(16px,1.6vw,18px);line-height:1.6;color:{{heroBodyColor}};margin:0 0 24px;max-width:480px;">{{heroBodyEl}}</p>
+      <div style="{{heroButtonRowStyle}}">
+        <button type="button" onClick="{{onHeroExplore}}" style="background:#FF6A3D;color:#fff;border:none;padding:16px 30px;border-radius:{{ctaRadius}};font-size:16px;font-weight:700;font-family:'Plus Jakarta Sans',sans-serif;cursor:pointer;box-shadow:0 10px 26px -10px rgba(255,106,61,0.45);min-height:48px;transition:transform .2s ease, background .2s ease;{{heroBtnExtra}}" style-hover="background:#FF8A57;transform:translateY(-2px);">{{hero.primaryCta}}</button>
+        <sc-if value="{{hasHeroSecondary}}" hint-placeholder-val="{{false}}">
+        <button type="button" onClick="{{onHeroGetApp}}" style="background:transparent;color:{{heroTextColor}};border:1.5px solid {{heroTextColor}};padding:16px 26px;border-radius:{{ctaRadius}};font-size:16px;font-weight:700;font-family:'Plus Jakarta Sans',sans-serif;cursor:pointer;min-height:48px;transition:background .2s ease, color .2s ease, transform .2s ease;{{heroBtnExtra}}" style-hover="background:#fff;color:#0B0B0B;transform:translateY(-2px);">{{hero.secondaryCta}}</button>
+        </sc-if>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section aria-label="Why members trust Luup" style="padding:clamp(28px,4vw,40px) 0;background:#fff;border-bottom:1px solid #DDDDDD;">
+  <div style="max-width:1200px;margin:0 auto;padding:0 clamp(20px,5vw,64px);display:flex;flex-wrap:wrap;align-items:center;gap:0;">
+    <sc-for list="{{trustItems}}" as="item" hint-placeholder-count="4">
+      <div style="display:flex;align-items:center;gap:12px;padding:12px 28px 12px 0;border-right:{{trustBorder}};margin-right:{{trustMargin}};flex:1 1 220px;">
+        <span style="flex:none;width:44px;height:44px;border-radius:999px;background:transparent;border:1.5px solid #FF6A3D;display:flex;align-items:center;justify-content:center;color:#FF6A3D;">{{item.iconEl}}</span>
+        <span style="font-size:14.5px;font-weight:400;color:#0B0B0B;line-height:1.3;">{{item.label}}</span>
+      </div>
+    </sc-for>
+  </div>
+</section>
+
+<section id="how-it-works" style="background:#0B0B0B;">
+  <div style="max-width:1200px;margin:0 auto;padding:clamp(56px,8vw,96px) clamp(20px,5vw,64px) clamp(48px,6vw,72px);">
+    <h2 style="text-align:center;font-size:clamp(26px,3.4vw,36px);font-weight:800;font-family:'Plus Jakarta Sans',sans-serif;color:#fff;margin:0 0 10px;letter-spacing:-0.02em;">How it works</h2>
+    <p style="text-align:center;font-size:16px;line-height:1.6;color:#C9C9C9;margin:0 0 44px;">Four steps. The first one takes about ten minutes.</p>
+    <div data-hiw-grid="" style="display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;align-items:stretch;">
+      <sc-for list="{{steps}}" as="step" hint-placeholder-count="4">
+        <div style="{{step.cardStyle}}">
+          <span style="{{step.numStyle}}">{{step.num}}</span>
+          <div style="width:52px;height:52px;border-radius:14px;background:#fff;border:1px solid #FFD9C4;display:flex;align-items:center;justify-content:center;color:#FF6A3D;margin:14px 0 18px;">{{step.iconEl}}</div>
+          <h3 style="font-size:18px;font-weight:700;font-family:'Plus Jakarta Sans',sans-serif;color:#0B0B0B;margin:0 0 8px;">{{step.title}}</h3>
+          <p style="font-size:14.5px;line-height:1.6;color:#444444;margin:0;">{{step.bodyEl}}</p>
+        </div>
+      </sc-for>
+    </div>
+    <div data-hiw-cta="" style="display:flex;flex-wrap:wrap;justify-content:center;gap:14px;margin-top:36px;">
+      <button type="button" onClick="{{onHowItWorksInterested}}" style="background:#FF6A3D;color:#0B0B0B;border:none;padding:16px 32px;border-radius:{{ctaRadius}};font-size:16px;font-weight:700;font-family:'Plus Jakarta Sans',sans-serif;cursor:pointer;min-height:48px;transition:transform .2s ease, background .2s ease;" style-hover="background:#FF8A57;transform:translateY(-2px);">{{navCtaLabel}}</button>
+      <button type="button" onClick="{{onHowItWorksQuestions}}" style="background:transparent;color:#fff;border:1.5px solid #fff;padding:16px 26px;border-radius:{{ctaRadius}};font-size:16px;font-weight:700;font-family:'Plus Jakarta Sans',sans-serif;cursor:pointer;min-height:48px;transition:background .2s ease, color .2s ease, transform .2s ease;" style-hover="background:#fff;color:#0B0B0B;transform:translateY(-2px);">Questions</button>
+    </div>
+    <div data-hiw-qr="" style="display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:18px;margin-top:26px;">
+      <img src="../assets/luup-qr.png" alt="QR code to download the Luup app" style="width:88px;height:88px;background:#fff;border-radius:10px;padding:6px;box-sizing:border-box;display:block;" />
+      <div>
+        <p style="margin:0 0 4px;font-size:14.5px;line-height:1.5;color:#C9C9C9;">Join at <a href="https://www.luupnow.com" style="color:#FF6A3D;font-weight:700;text-decoration:none;">www.luupnow.com</a></p>
+        <p style="margin:0;font-size:13px;line-height:1.5;color:#9A9A9A;">Or scan to download the Luup app.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section aria-label="Insurance and coverage" style="padding:clamp(48px,7vw,72px) 0;background:#0B0B0B;">
+  <div style="max-width:1200px;margin:0 auto;padding:0 clamp(20px,5vw,64px);">
+    <h2 style="text-align:center;font-size:clamp(22px,2.8vw,30px);font-weight:800;font-family:'Plus Jakarta Sans',sans-serif;color:#fff;margin:0 0 40px;letter-spacing:-0.02em;">Built on infrastructure already live in BC</h2>
+    <div data-cov-grid="" style="display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:28px;">
+      <div style="background:#171717;border-radius:14px;padding:28px;display:flex;flex-direction:column;gap:14px;align-items:center;text-align:center;">
+        <img src="../assets/icbc-logo.svg" alt="ICBC" style="width:56px;height:56px;filter:brightness(0) invert(1);" />
+        <p style="margin:0;font-size:16px;font-weight:700;color:#fff;font-family:'Plus Jakarta Sans',sans-serif;">Every trip is covered</p>
+        <p style="margin:0;font-size:14px;color:#c9c9c9;line-height:1.55;">Luup holds a peer-to-peer blanket certificate with the Insurance Corporation of British Columbia. Protection applies from pickup to return, on every booking.</p>
+      </div>
+      <div style="background:#171717;border-radius:14px;padding:28px;display:flex;flex-direction:column;gap:14px;align-items:center;text-align:center;">
+        <span style="width:56px;height:56px;border-radius:999px;background:transparent;border:1.5px solid #fff;display:flex;align-items:center;justify-content:center;color:#fff;">{{shieldIconEl}}</span>
+        <p style="margin:0;font-size:16px;font-weight:700;color:#fff;font-family:'Plus Jakarta Sans',sans-serif;">Every driver checked</p>
+        <p style="margin:0;font-size:14px;color:#c9c9c9;line-height:1.55;">Every renter and every owner is ID and licence verified before they can book anything.</p>
+      </div>
+      <div style="background:#171717;border-radius:14px;padding:28px;display:flex;flex-direction:column;gap:14px;align-items:center;text-align:center;">
+        <span style="width:56px;height:56px;border-radius:999px;background:transparent;border:1.5px solid #fff;display:flex;align-items:center;justify-content:center;color:#fff;">{{ownersIconEl}}</span>
+        <p style="margin:0;font-size:16px;font-weight:700;color:#fff;font-family:'Plus Jakarta Sans',sans-serif;">Owners decide</p>
+        <p style="margin:0;font-size:14px;color:#c9c9c9;line-height:1.55;">Owners approve every booking themselves, having seen who is asking. They can always say no.</p>
+      </div>
+      <div style="background:#171717;border-radius:14px;padding:28px;display:flex;flex-direction:column;gap:14px;align-items:center;text-align:center;">
+        <span style="width:56px;height:56px;border-radius:999px;background:transparent;border:1.5px solid #fff;display:flex;align-items:center;justify-content:center;color:#fff;">{{canadaIconEl}}</span>
+        <p style="margin:0;font-size:16px;font-weight:700;color:#fff;font-family:'Plus Jakarta Sans',sans-serif;">Built in Canada</p>
+        <p style="margin:0;font-size:14px;color:#c9c9c9;line-height:1.55;">A Canadian company, operating in British Columbia.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="why-luup" style="padding:clamp(56px,8vw,96px) 0;background:#F5F5F5;">
+  <div style="max-width:1100px;margin:0 auto;padding:0 clamp(20px,5vw,64px);">
+    <h2 style="text-align:center;font-size:clamp(26px,3.4vw,36px);font-weight:800;font-family:'Plus Jakarta Sans',sans-serif;color:#0B0B0B;margin:0 0 12px;letter-spacing:-0.02em;">Why partner with LUUP?</h2>
+    <p style="text-align:center;font-size:16px;line-height:1.6;color:#555555;margin:0 0 44px;">{{whyLuupHeadingEl}}</p>
+    <div data-why-grid="" style="display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:22px;">
+      <sc-for list="{{whyBenefits}}" as="b" hint-placeholder-count="4">
+        <div style="background:#fff;border:1px solid #DDDDDD;border-radius:14px;padding:26px 22px;display:flex;flex-direction:column;gap:12px;">
+          <span style="width:50px;height:50px;border-radius:14px;background:#FFF3EE;border:1px solid #FFD9C4;display:flex;align-items:center;justify-content:center;color:#FF6A3D;flex:none;">{{b.iconEl}}</span>
+          <h3 style="font-size:17px;font-weight:700;font-family:'Plus Jakarta Sans',sans-serif;color:#0B0B0B;margin:0;">{{b.title}}</h3>
+          <p style="font-size:14.5px;line-height:1.6;color:#555555;margin:0;">{{b.body}}</p>
+        </div>
+      </sc-for>
+    </div>
+  </div>
+</section>
+
+<section id="invite-form" style="padding:clamp(56px,8vw,96px) 0;background:#0B0B0B;">
+  <div style="max-width:1200px;margin:0 auto;padding:0 clamp(20px,5vw,64px);display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:48px;">
+    <div>
+      <h2 style="font-size:clamp(26px,3.4vw,36px);font-weight:800;font-family:'Plus Jakarta Sans',sans-serif;color:#fff;margin:0 0 16px;letter-spacing:-0.02em;">{{form.heading}}</h2>
+      <p style="font-size:16px;line-height:1.65;color:#fff;margin:0;max-width:420px;">{{form.body}}</p>
+    </div>
+    <div>
+      <sc-if value="{{formSuccess}}" hint-placeholder-val="{{false}}">
+        <div role="status" style="background:#FFF1EC;border:1px solid #FFD4C2;border-radius:12px;padding:28px;">
+          <p style="margin:0 0 6px;font-weight:700;font-family:'Plus Jakarta Sans',sans-serif;font-size:17px;color:#444444;">You're on the list.</p>
+          <p style="margin:0;font-size:14.5px;color:#444444;line-height:1.6;">We'll be in touch about your invite. Keep an eye on your inbox.</p>
+        </div>
+      </sc-if>
+      <sc-if value="{{formNotSuccess}}" hint-placeholder-val="{{true}}">
+        <form onSubmit="{{onSubmit}}" noValidate="{{true}}" style="display:flex;flex-direction:column;gap:16px;">
+          <p style="margin:0 0 -4px;font-size:12.5px;color:#a3a3a3;">* Required</p>
+          <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:16px;">
+            <div>
+              <label htmlFor="firstName" style="display:block;font-size:13.5px;font-weight:600;color:#fff;margin-bottom:6px;">Shop name <span aria-hidden="{{true}}" style="color:#FF6A3D;">*</span></label>
+              <input id="firstName" name="shopName" type="text" autoComplete="organization" required="{{true}}" aria-required="{{true}}" value="{{formFirstName}}" onChange="{{onFirstNameChange}}" aria-invalid="{{firstNameInvalid}}" aria-describedby="firstName-error" style="width:100%;box-sizing:border-box;padding:13px 14px;border-radius:8px;border:1.5px solid {{firstNameBorder}};font-size:15px;min-height:44px;" />
+              <sc-if value="{{formErrors.firstName}}" hint-placeholder-val="{{false}}"><p id="firstName-error" role="alert" style="margin:6px 0 0;font-size:13px;color:#B3261E;">{{formErrors.firstName}}</p></sc-if>
+            </div>
+            <div>
+              <label htmlFor="lastName" style="display:block;font-size:13.5px;font-weight:600;color:#fff;margin-bottom:6px;">Your name <span aria-hidden="{{true}}" style="color:#FF6A3D;">*</span></label>
+              <input id="lastName" name="contactName" type="text" autoComplete="name" required="{{true}}" aria-required="{{true}}" value="{{formLastName}}" onChange="{{onLastNameChange}}" aria-invalid="{{lastNameInvalid}}" aria-describedby="lastName-error" style="width:100%;box-sizing:border-box;padding:13px 14px;border-radius:8px;border:1.5px solid {{lastNameBorder}};font-size:15px;min-height:44px;" />
+              <sc-if value="{{formErrors.lastName}}" hint-placeholder-val="{{false}}"><p id="lastName-error" role="alert" style="margin:6px 0 0;font-size:13px;color:#B3261E;">{{formErrors.lastName}}</p></sc-if>
+            </div>
+          </div>
+          <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:16px;">
+            <div>
+              <label htmlFor="email" style="display:block;font-size:13.5px;font-weight:600;color:#fff;margin-bottom:6px;">Email <span aria-hidden="{{true}}" style="color:#FF6A3D;">*</span></label>
+              <input id="email" name="email" type="email" autoComplete="email" inputMode="email" required="{{true}}" aria-required="{{true}}" value="{{formEmail}}" onChange="{{onEmailChange}}" aria-invalid="{{emailInvalid}}" aria-describedby="email-error" style="width:100%;box-sizing:border-box;padding:13px 14px;border-radius:8px;border:1.5px solid {{emailBorder}};font-size:15px;min-height:44px;" />
+              <sc-if value="{{formErrors.email}}" hint-placeholder-val="{{false}}"><p id="email-error" role="alert" style="margin:6px 0 0;font-size:13px;color:#B3261E;">{{formErrors.email}}</p></sc-if>
+            </div>
+            <div>
+              <label htmlFor="mobile" style="display:block;font-size:13.5px;font-weight:600;color:#fff;margin-bottom:6px;">Phone number <span aria-hidden="{{true}}" style="color:#FF6A3D;">*</span></label>
+              <input id="mobile" name="mobile" type="tel" autoComplete="tel" inputMode="tel" required="{{true}}" aria-required="{{true}}" value="{{formMobile}}" onChange="{{onMobileChange}}" aria-invalid="{{mobileInvalid}}" aria-describedby="mobile-error" style="width:100%;box-sizing:border-box;padding:13px 14px;border-radius:8px;border:1.5px solid {{mobileBorder}};font-size:15px;min-height:44px;" />
+              <sc-if value="{{formErrors.mobile}}" hint-placeholder-val="{{false}}"><p id="mobile-error" role="alert" style="margin:6px 0 0;font-size:13px;color:#B3261E;">{{formErrors.mobile}}</p></sc-if>
+          </div>
+            <div>
+              <label htmlFor="area" style="display:block;font-size:13.5px;font-weight:600;color:#fff;margin-bottom:6px;">Area <span aria-hidden="{{true}}" style="color:#FF6A3D;">*</span></label>
+              <select id="area" name="area" required="{{true}}" aria-required="{{true}}" value="{{formArea}}" onChange="{{onAreaChange}}" aria-invalid="{{areaInvalid}}" aria-describedby="area-error" style="width:100%;box-sizing:border-box;padding:13px 14px;border-radius:8px;border:1.5px solid {{areaBorder}};font-size:15px;min-height:44px;background:#fff;color:#0B0B0B;">
+                <option value="">Choose your area</option>
+                <sc-for list="{{areaOptions}}" as="opt" hint-placeholder-count="6">
+                  <option value="{{opt}}">{{opt}}</option>
+                </sc-for>
+              </select>
+              <sc-if value="{{formErrors.area}}" hint-placeholder-val="{{false}}"><p id="area-error" role="alert" style="margin:6px 0 0;font-size:13px;color:#B3261E;">{{formErrors.area}}</p></sc-if>
+            </div>
+          </div>
+          <div style="display:flex;gap:10px;align-items:flex-start;">
+            <input id="consent" name="consent" type="checkbox" checked="{{consent}}" onChange="{{onConsentChange}}" aria-required="{{true}}" aria-describedby="consent-error" style="margin-top:3px;width:18px;height:18px;flex:none;" />
+            <label htmlFor="consent" style="font-size:13.5px;line-height:1.55;color:#e5e5e5;">{{formConsentEl}}</label>
+          </div>
+          <sc-if value="{{formErrors.consent}}" hint-placeholder-val="{{false}}"><p id="consent-error" role="alert" style="margin:-8px 0 0;font-size:13px;color:#B3261E;">{{formErrors.consent}}</p></sc-if>
+          <sc-if value="{{formStatusError}}" hint-placeholder-val="{{false}}"><p role="alert" style="margin:0;font-size:13.5px;color:#FF8A80;">Something went wrong on our end — please try again.</p></sc-if>
+          <button type="submit" disabled="{{formSubmitting}}" style="background:{{submitBg}};color:#0B0B0B;border:none;padding:16px 24px;border-radius:{{ctaRadius}};font-size:16px;font-weight:700;font-family:'Plus Jakarta Sans',sans-serif;cursor:{{submitCursor}};min-height:48px;">{{submitLabel}}</button>
+        </form>
+      </sc-if>
+    </div>
+  </div>
+</section>
+
+<section id="faq" style="padding:clamp(56px,8vw,96px) 0;background:#F5F5F5;">
+  <div style="max-width:800px;margin:0 auto;padding:0 clamp(20px,5vw,64px);">
+    <h2 style="text-align:center;font-size:clamp(26px,3.4vw,36px);font-weight:800;font-family:'Plus Jakarta Sans',sans-serif;color:#0B0B0B;margin:0 0 32px;letter-spacing:-0.02em;">Questions</h2>
+    <sc-for list="{{faqItems}}" as="item" hint-placeholder-count="6">
+      <div style="border-bottom:1px solid #DDDDDD;">
+        <h3 style="margin:0;">
+          <button type="button" id="{{item.buttonId}}" aria-expanded="{{item.isOpen}}" aria-controls="{{item.panelId}}" onClick="{{item.onToggle}}" style="width:100%;display:flex;align-items:center;justify-content:space-between;gap:16px;background:none;border:none;text-align:left;padding:20px 4px;font-size:16px;font-weight:600;color:#444444;cursor:pointer;min-height:44px;">
+            <span style="font-family:'Plus Jakarta Sans',sans-serif;">{{item.q}}</span>
+            <span style="flex:none;transform:{{item.chevronTransform}};transition:transform .2s;color:#12557C;">{{item.chevronEl}}</span>
+          </button>
+        </h3>
+        <sc-if value="{{item.isOpen}}" hint-placeholder-val="{{false}}">
+          <div id="{{item.panelId}}" role="region" aria-labelledby="{{item.buttonId}}" style="padding:0 4px 22px;">
+            <p style="margin:0;font-size:15px;line-height:1.65;color:#444444;max-width:640px;">{{item.aEl}}</p>
+          </div>
+        </sc-if>
+      </div>
+    </sc-for>
+  </div>
+</section>
+
+<section id="final-cta" style="padding:clamp(44px,7vw,72px) 0;background:#F5F5F5;">
+  <div style="max-width:1200px;margin:0 auto;padding:0 clamp(20px,5vw,64px);display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:24px;">
+    <h2 style="font-size:clamp(22px,2.6vw,28px);font-weight:800;font-family:'Plus Jakarta Sans',sans-serif;color:#444444;margin:0;max-width:520px;">{{finalCta.headline}}</h2>
+    <div style="display:flex;flex-wrap:wrap;gap:14px;">
+      <button type="button" onClick="{{onFinalGetApp}}" style="background:#FF6A3D;color:#0B0B0B;border:none;padding:16px 30px;border-radius:{{ctaRadius}};font-size:16px;font-weight:700;font-family:'Plus Jakarta Sans',sans-serif;cursor:pointer;min-height:48px;transition:transform .2s ease, background .2s ease;" style-hover="background:#FF8A57;transform:translateY(-2px);">{{finalCta.primaryCta}}</button>
+      <sc-if value="{{hasFinalSecondary}}" hint-placeholder-val="{{false}}">
+      <button type="button" onClick="{{onFinalHoldInvite}}" style="background:#fff;color:#0B0B0B;border:1.5px solid #0B0B0B;padding:16px 26px;border-radius:{{ctaRadius}};font-size:16px;font-weight:700;font-family:'Plus Jakarta Sans',sans-serif;cursor:pointer;min-height:48px;transition:background .2s ease, color .2s ease, transform .2s ease;" style-hover="background:#0B0B0B;color:#fff;transform:translateY(-2px);">{{finalCta.secondaryCta}}</button>
+      </sc-if>
+    </div>
+  </div>
+</section>
+
+<footer style="padding:clamp(40px,6vw,56px) 0 32px;background:#0B0B0B;">
+  <div style="max-width:1200px;margin:0 auto;padding:0 clamp(20px,5vw,64px);">
+    <img src="{{logoSrc}}" alt="Luup" style="width:100px;height:auto;display:block;margin-bottom:28px;" />
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:32px;">
+    <div>
+      <p style="margin:0 0 6px;font-weight:700;font-size:14.5px;color:#fff;">{{footerCompanyEl}}</p>
+      <p style="margin:0 0 4px;font-size:13.5px;color:#fff;">{{footer.address}}</p>
+      <p style="margin:0 0 12px;font-size:13.5px;color:#fff;"><a href="tel:{{footer.phoneHref}}" style="color:#fff;text-decoration:none;">{{footer.phone}}</a></p>
+      <hr style="border:none;border-top:1px solid #2A2A2A;margin:0 0 12px;" />
+      <p style="margin:0 0 12px;font-size:13.5px;color:#fff;"><a href="mailto:{{footer.email}}" style="color:#FF6A3D;text-decoration:none;">{{footer.email}}</a> · <a href="https://{{footer.site}}" style="color:#FF6A3D;text-decoration:none;">{{footer.site}}</a></p>
+      <div style="display:flex;gap:16px;flex-wrap:wrap;">
+        <sc-for list="{{footer.links}}" as="link" hint-placeholder-count="3">
+          <a href="{{link.href}}" style="font-size:13.5px;color:#fff;text-decoration:none;">{{link.label}}</a>
+        </sc-for>
+      </div>
+    </div>
+    <div style="display:flex;gap:16px;align-items:flex-start;flex-wrap:wrap;">
+      <sc-for list="{{footer.social}}" as="soc" hint-placeholder-count="6">
+        <a href="{{soc.href}}" aria-label="{{soc.label}}" target="_blank" rel="noopener noreferrer" style="color:#fff;display:flex;">{{soc.iconEl}}</a>
+      </sc-for>
+    </div>
+    </div>
+    <p style="margin:24px 0 0;font-size:11.5px;line-height:1.6;color:#9A9A9A;max-width:820px;"><strong style="color:#9A9A9A;">Offer Terms:</strong> {{footer.legalOffer}}</p>
+  </div>
+</footer>
+
+<sc-if value="{{formModalOpen}}" hint-placeholder-val="{{false}}">
+  <div role="dialog" aria-modal="true" aria-labelledby="form-modal-heading" onClick="{{closeFormModal}}" style="position:fixed;inset:0;background:rgba(0,0,0,0.6);z-index:1000;display:flex;align-items:center;justify-content:center;padding:20px;overflow-y:auto;">
+    <div onClick="{{stopPropagation}}" style="background:#0B0B0B;border-radius:16px;padding:32px 28px;max-width:460px;width:100%;position:relative;box-sizing:border-box;max-height:90vh;overflow-y:auto;">
+      <button type="button" onClick="{{closeFormModal}}" aria-label="Close" style="position:absolute;top:14px;right:14px;background:#222;border:none;border-radius:999px;width:36px;height:36px;display:flex;align-items:center;justify-content:center;cursor:pointer;color:#fff;">{{closeIconEl}}</button>
+      <h2 id="form-modal-heading" style="margin:0 0 8px;font-size:22px;font-weight:800;font-family:'Plus Jakarta Sans',sans-serif;color:#fff;">{{form.heading}}</h2>
+      <p style="margin:0 0 20px;font-size:14.5px;line-height:1.6;color:#e5e5e5;">{{form.body}}</p>
+      <sc-if value="{{formSuccess}}" hint-placeholder-val="{{false}}">
+        <div role="status" style="background:#FFF1EC;border:1px solid #FFD4C2;border-radius:12px;padding:24px;">
+          <p style="margin:0 0 6px;font-weight:700;font-family:'Plus Jakarta Sans',sans-serif;font-size:16px;color:#444444;">You're on the list.</p>
+          <p style="margin:0;font-size:14px;color:#444444;line-height:1.6;">We'll be in touch about your invite. Keep an eye on your inbox.</p>
+        </div>
+      </sc-if>
+      <sc-if value="{{formNotSuccess}}" hint-placeholder-val="{{true}}">
+        <form onSubmit="{{onSubmit}}" noValidate="{{true}}" style="display:flex;flex-direction:column;gap:14px;">
+          <p style="margin:0 0 -4px;font-size:12.5px;color:#a3a3a3;">* Required</p>
+          <div>
+            <label htmlFor="modalFirstName" style="display:block;font-size:13.5px;font-weight:600;color:#fff;margin-bottom:6px;">Shop name <span aria-hidden="{{true}}" style="color:#FF6A3D;">*</span></label>
+            <input id="modalFirstName" name="shopName" type="text" autoComplete="organization" required="{{true}}" aria-required="{{true}}" value="{{formFirstName}}" onChange="{{onFirstNameChange}}" aria-invalid="{{firstNameInvalid}}" style="width:100%;box-sizing:border-box;padding:13px 14px;border-radius:8px;border:1.5px solid {{firstNameBorder}};font-size:15px;min-height:44px;" />
+            <sc-if value="{{formErrors.firstName}}" hint-placeholder-val="{{false}}"><p role="alert" style="margin:6px 0 0;font-size:13px;color:#FF8A80;">{{formErrors.firstName}}</p></sc-if>
+          </div>
+          <div>
+            <label htmlFor="modalLastName" style="display:block;font-size:13.5px;font-weight:600;color:#fff;margin-bottom:6px;">Your name <span aria-hidden="{{true}}" style="color:#FF6A3D;">*</span></label>
+            <input id="modalLastName" name="contactName" type="text" autoComplete="name" required="{{true}}" aria-required="{{true}}" value="{{formLastName}}" onChange="{{onLastNameChange}}" aria-invalid="{{lastNameInvalid}}" style="width:100%;box-sizing:border-box;padding:13px 14px;border-radius:8px;border:1.5px solid {{lastNameBorder}};font-size:15px;min-height:44px;" />
+            <sc-if value="{{formErrors.lastName}}" hint-placeholder-val="{{false}}"><p role="alert" style="margin:6px 0 0;font-size:13px;color:#FF8A80;">{{formErrors.lastName}}</p></sc-if>
+          </div>
+          <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:16px;">
+          <div>
+            <label htmlFor="modalEmail" style="display:block;font-size:13.5px;font-weight:600;color:#fff;margin-bottom:6px;">Email <span aria-hidden="{{true}}" style="color:#FF6A3D;">*</span></label>
+            <input id="modalEmail" name="email" type="email" autoComplete="email" inputMode="email" required="{{true}}" aria-required="{{true}}" value="{{formEmail}}" onChange="{{onEmailChange}}" aria-invalid="{{emailInvalid}}" style="width:100%;box-sizing:border-box;padding:13px 14px;border-radius:8px;border:1.5px solid {{emailBorder}};font-size:15px;min-height:44px;" />
+            <sc-if value="{{formErrors.email}}" hint-placeholder-val="{{false}}"><p role="alert" style="margin:6px 0 0;font-size:13px;color:#FF8A80;">{{formErrors.email}}</p></sc-if>
+          </div>
+          <div>
+            <label htmlFor="modalMobile" style="display:block;font-size:13.5px;font-weight:600;color:#fff;margin-bottom:6px;">Phone number <span aria-hidden="{{true}}" style="color:#FF6A3D;">*</span></label>
+            <input id="modalMobile" name="mobile" type="tel" autoComplete="tel" inputMode="tel" required="{{true}}" aria-required="{{true}}" value="{{formMobile}}" onChange="{{onMobileChange}}" aria-invalid="{{mobileInvalid}}" style="width:100%;box-sizing:border-box;padding:13px 14px;border-radius:8px;border:1.5px solid {{mobileBorder}};font-size:15px;min-height:44px;" />
+            <sc-if value="{{formErrors.mobile}}" hint-placeholder-val="{{false}}"><p role="alert" style="margin:6px 0 0;font-size:13px;color:#FF8A80;">{{formErrors.mobile}}</p></sc-if>
+          </div>
+          </div>
+          <div>
+            <label htmlFor="modalArea" style="display:block;font-size:13.5px;font-weight:600;color:#fff;margin-bottom:6px;">Area <span aria-hidden="{{true}}" style="color:#FF6A3D;">*</span></label>
+            <select id="modalArea" name="area" required="{{true}}" aria-required="{{true}}" value="{{formArea}}" onChange="{{onAreaChange}}" aria-invalid="{{areaInvalid}}" style="width:100%;box-sizing:border-box;padding:13px 14px;border-radius:8px;border:1.5px solid {{areaBorder}};font-size:15px;min-height:44px;background:#fff;color:#0B0B0B;">
+              <option value="">Choose your area</option>
+              <sc-for list="{{areaOptions}}" as="opt" hint-placeholder-count="6">
+                <option value="{{opt}}">{{opt}}</option>
+              </sc-for>
+            </select>
+            <sc-if value="{{formErrors.area}}" hint-placeholder-val="{{false}}"><p role="alert" style="margin:6px 0 0;font-size:13px;color:#FF8A80;">{{formErrors.area}}</p></sc-if>
+          </div>
+          <div style="display:flex;gap:10px;align-items:flex-start;">
+            <input id="modalConsent" name="consent" type="checkbox" checked="{{consent}}" onChange="{{onConsentChange}}" aria-required="{{true}}" style="margin-top:3px;width:18px;height:18px;flex:none;" />
+            <label htmlFor="modalConsent" style="font-size:13px;line-height:1.55;color:#e5e5e5;">{{formConsentEl}}</label>
+          </div>
+          <sc-if value="{{formErrors.consent}}" hint-placeholder-val="{{false}}"><p role="alert" style="margin:-8px 0 0;font-size:13px;color:#FF8A80;">{{formErrors.consent}}</p></sc-if>
+          <sc-if value="{{formStatusError}}" hint-placeholder-val="{{false}}"><p role="alert" style="margin:0;font-size:13.5px;color:#FF8A80;">Something went wrong on our end — please try again.</p></sc-if>
+          <button type="submit" disabled="{{formSubmitting}}" style="background:{{submitBg}};color:#0B0B0B;border:none;padding:16px 24px;border-radius:{{ctaRadius}};font-size:16px;font-weight:700;font-family:'Plus Jakarta Sans',sans-serif;cursor:{{submitCursor}};min-height:48px;">{{submitLabel}}</button>
+        </form>
+      </sc-if>
+    </div>
+  </div>
+</sc-if>
+
+<sc-if value="{{appModalOpen}}" hint-placeholder-val="{{false}}">
+  <div role="dialog" aria-modal="true" aria-labelledby="app-modal-heading" onClick="{{closeAppModal}}" style="position:fixed;inset:0;background:rgba(0,0,0,0.6);z-index:1000;display:flex;align-items:center;justify-content:center;padding:20px;">
+    <div onClick="{{stopPropagation}}" style="background:#fff;border-radius:16px;padding:32px 28px;max-width:380px;width:100%;position:relative;box-sizing:border-box;">
+      <button type="button" onClick="{{closeAppModal}}" aria-label="Close" style="position:absolute;top:14px;right:14px;background:#F5F5F5;border:none;border-radius:999px;width:36px;height:36px;display:flex;align-items:center;justify-content:center;cursor:pointer;color:#444444;">{{closeIconEl}}</button>
+      <h2 id="app-modal-heading" style="margin:0 0 6px;font-size:20px;font-weight:800;font-family:'Plus Jakarta Sans',sans-serif;color:#0B0B0B;text-align:center;">Get the Luup app</h2>
+      <p style="margin:0 0 20px;font-size:14px;color:#5B5B5B;text-align:center;">Scan the QR code or pick your store below.</p>
+      <div style="display:flex;justify-content:center;margin-bottom:20px;">
+        <img src="../assets/luup-qr.png" alt="QR code to download the Luup app" style="width:160px;height:160px;border:1px solid #DDDDDD;border-radius:10px;padding:8px;box-sizing:border-box;" />
+      </div>
+      <div style="display:flex;flex-direction:column;gap:10px;">
+        <button type="button" onClick="{{onAppStoreClick}}" style="background:#0B0B0B;color:#fff;border:none;padding:13px 18px;border-radius:10px;font-size:15px;font-weight:700;font-family:'Plus Jakarta Sans',sans-serif;cursor:pointer;min-height:48px;">Download on the App Store</button>
+        <button type="button" onClick="{{onGooglePlayClick}}" style="background:#fff;color:#0B0B0B;border:1.5px solid #0B0B0B;padding:13px 18px;border-radius:10px;font-size:15px;font-weight:700;font-family:'Plus Jakarta Sans',sans-serif;cursor:pointer;min-height:48px;">Get it on Google Play</button>
+      </div>
+    </div>
+  </div>
+</sc-if>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;ctaShape&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;default&quot;:&quot;pill&quot;,&quot;options&quot;:[&quot;rounded&quot;,&quot;pill&quot;],&quot;tsType&quot;:&quot;'rounded'|'pill'&quot;,&quot;section&quot;:&quot;Buttons&quot;},&quot;heroFocal&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;default&quot;:&quot;right&quot;,&quot;options&quot;:[&quot;left&quot;,&quot;center&quot;,&quot;right&quot;],&quot;tsType&quot;:&quot;'left'|'center'|'right'&quot;,&quot;section&quot;:&quot;Hero&quot;},&quot;stickyHeader&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Navigation&quot;}}">
+const PAGE_CONFIG = {
+  pageNumber: 2,
+  pageName: 'Auto Shop Partner',
+  campaign: 'Auto Shop',
+  leadType: 'Partner - Auto Shop',
+  city: 'Metro Vancouver',
+  pageUrl: 'https://luupnow.ca/autoshop',
+  shortAlias: 'https://luupnow.ca/shop',
+  appDownloadUrl: 'https://luupnow.ca/app',
+  areaOptions: ['Vancouver', 'Burnaby', 'Richmond', 'Surrey', 'New Westminster', 'North Vancouver', 'West Vancouver', 'Coquitlam', 'Port Coquitlam', 'Delta', 'Langley', 'Victoria', 'Other in BC'],
+  formEndpoint: 'https://formspree.io/f/xdenypay',
+  analytics: {
+    gaId: 'G-5RV23C0JFY',
+    metaPixelId: '3079517958908951',
+    mixpanelToken: (window.LUUP_IDS && window.LUUP_IDS.mixpanel) || ''
+  },
+  logo: '../assets/luup-logo-white.png',
+  navCta: 'Become a LUUP Partner',
+  hero: {
+    image: 'images/auto_shop2.png',
+    imageAlt: 'A shop owner in a black and orange work jacket standing outside his service bay, smiling and holding up a phone showing a confirmed LUUP booking, with a customer and the Metro Vancouver skyline behind him.',
+    eyebrow: 'METRO VANCOUVER \u00b7 FOR AUTO SHOPS',
+    headlineLead: 'Turn Loaner Cars ',
+    headlineHighlight: 'Into a New Revenue',
+    body: 'Keep customers moving during repairs  and keep the rental revenue. Earn a $500 welcome bonus when your vehicle is rented for 9+ days by Oct. 31, 2026, plus $25 per referral.',
+    offerTitle: '$500 welcome bonus',
+    offerBody: ' and $25 for every referred customer.',
+    primaryCta: 'Become a LUUP Partner',
+    secondaryCta: 'How it works'
+  },
+  nav: [
+    { label: 'How it works', target: 'how-it-works' },
+    { label: 'Why partner', target: 'why-luup' },
+    { label: 'Questions', target: 'faq' }
+  ],
+  trust: [
+    { icon: 'dollar', label: 'No loaner fleet to buy' },
+    { icon: 'shield-check', label: 'We verify every driver' },
+    { icon: 'link', label: 'Your own trackable link' },
+    { icon: 'pin', label: 'Nothing exclusive to sign' }
+  ],
+  video: { heading: 'Sixty seconds on how it works', src: '', poster: '', captionsSrc: '' },
+  occasions: {
+    heading: 'The car is in your bay. Their week carries on regardless.',
+    body: 'A repair that keeps a car overnight is the moment a customer starts weighing the inconvenience against the work. When there is an easy way to stay mobile, that conversation changes - and so does what you are able to book in.',
+    items: [
+      { icon: 'people', label: 'The school run and the daycare pickup', photo: '', photoHint: 'a parent collecting kids in a borrowed Luup car' },
+      { icon: 'calendar', label: 'Getting to work for the week', photo: '', photoHint: 'a commuter beside a Luup car on a residential street' },
+      { icon: 'cart', label: 'Groceries and errands', photo: '', photoHint: 'loading groceries into a Luup car' },
+      { icon: 'suitcase', label: 'A weekend already booked', photo: '', photoHint: 'a couple packing a Luup car for the weekend' },
+      { icon: 'box', label: 'The job that needs a vehicle', photo: '', photoHint: 'a tradesperson loading tools into a Luup car' }
+    ]
+  },
+  howItWorks: {
+    heading: 'Four steps, and the first one takes two minutes.',
+    steps: [
+      { number: 1, icon: 'car', title: 'Add your vehicle', body: 'Photos, your rate, your availability. We build the listing.' },
+      { number: 2, icon: 'person-check', title: 'Approve the renter', body: 'You see verified ID and licence before anything is confirmed.' },
+      { number: 3, icon: 'dollar', title: 'It earns', body: 'Rental income goes to your shop. Reach 9 rental days by Oct. 31 and the $500 bonus is yours.' },
+      { number: 4, icon: 'link', title: 'Refer for more', body: 'Add your Luup link to the text you already send customers. $25 each time one books.', accent: true }
+    ]
+  },
+  whyLuup: {
+    heading: 'What you actually get out of it.',
+    benefits: [
+      { icon: 'no-fleet', title: 'Nothing to buy', body: 'Use vehicles you already own, insure and park.' },
+      { icon: 'dollar', title: 'It costs you nothing', body: 'No fee, subscription, minimum, or long-term contract.' },
+      { icon: 'person-check', title: 'You keep control', body: 'Your price, your calendar, your approval.' },
+      { icon: 'document', title: 'Nothing exclusive', body: 'Keep your existing arrangements.' }
+    ]
+  },
+  form: {
+    heading: 'Become a LUUP partner',
+    body: 'Leave your details and we will get in touch to walk through how partnering works for your shop.',
+    areas: [
+      'Burnaby \u2014 Metrotown / Brentwood / BCIT',
+      'Richmond City Centre',
+      'Vancouver',
+      'North Vancouver / West Vancouver',
+      'Somewhere else in BC'
+    ],
+    consentText: 'Yes \u2014 email or text me about partnering my shop with LUUP. I can unsubscribe at any time.',
+    submitLabel: 'Become a LUUP Partner'
+  },
+  faq: {
+    items: [
+      { q: 'What vehicles can I add?', a: 'Anything you control that is registered and insured in British Columbia — the courtesy car, the owner’s second vehicle, a trade-in on the lot, a fleet or service vehicle. Vehicles over 5,000kg are not eligible, and neither are ATVs, golf carts, snowmobiles, utility vehicles or commercial trailers.' },
+      { q: 'Can I start with just one car?', a: 'Yes, and most shops do. Add more once you have seen how the calendar works.' },
+      { q: 'How much will it earn?', a: 'That depends on the vehicle, the rate you set and how often you make it available, so we are not going to put a number on it. You set the rate and you can change it whenever you like.' },
+      { q: 'Can I decide when it is available?', a: 'Yes. The calendar is yours. Block out the days you need the vehicle and nothing can be booked. Listing it does not mean losing it.' },
+      { q: 'What if one of my own customers needs it?', a: 'Block the calendar and it is back with you. Plenty of shops keep the vehicle free during the week for customers and let it earn at weekends.' },
+      { q: 'Who decides who rents it?', a: 'You do. Every renter is ID and licence verified before they can book anything, and you approve each booking having seen a verified profile. You can decline without giving a reason.' },
+      { q: 'What is the $500 Welcome Bonus?', a: 'Your participating vehicle earns a $500 bonus once it reaches at least nine rental days by 31 October 2026. Nine days in total, across any number of bookings — not nine days in a row.' },
+      { q: 'How does the $25 referral work?', a: 'Separately from the rental income, you earn $25 for every eligible customer who joins Luup through your link and completes a qualifying booking. Or $50 in Luup credit if you would rather have that.' },
+      { q: 'Do I need to tell my insurer?', a: 'Yes, and it matters. Listing a vehicle for peer-to-peer rental is a change of use, and your Autoplan broker needs to know before you list. We will give you the wording — it takes about five minutes and it only happens once per vehicle.' },
+      { q: 'Do I need to become a rental car company?', a: 'No. You are not running a rental business. You are making your own vehicles available through a platform that handles the listing, the booking, the payment and the documentation. The only thing on your side is telling your own insurer how the vehicle is being used.' },
+      { q: 'What if the vehicle is damaged?', a: 'Every booking includes renter verification, booking records, and photo documentation before and after the trip. Bookings are covered from pickup to return, and claims are handled through Luup.' },
+      { q: 'Who cleans it between bookings?', a: 'Renters are expected to return a vehicle as they found it. You run a repair shop — most partners tell us this is the easiest part of it.' },
+      { q: 'What does my staff have to do?', a: 'Add the vehicle once, mention it when a customer needs a car, approve the booking and hand over the keys. Luup does the rest.' },
+      { q: 'What does it cost the shop?', a: 'Nothing to join. No fee, no subscription, no minimum, no contract length. You are listing vehicles you already own.' },
+      { q: 'Do I have to stop working with anyone else?', a: 'No. Nothing exclusive. Keep every arrangement you already have.' },
+      { q: 'Which areas are you in?', a: 'Metro Vancouver — Burnaby, Richmond and Vancouver to start, with more added as members join.' }
+    ]
+  },
+  finalCta: {
+    headline: 'Keep your customers moving while you keep their car.',
+    primaryCta: 'Become a LUUP Partner',
+    secondaryCta: ''
+  },
+  footer: {
+    company: 'Luup Technologies Corp.',
+    address: '21 Braid St, New Westminster, BC V3L 3P4',
+    phone: '1 (877) 705-7040',
+    phoneHref: '+18777057040',
+    email: 'hey@luupnow.com',
+    site: 'luupnow.com',
+    legal: 'Partnering is subject to application and agreement. LUUP membership for drivers is subject to application, verification and agreement. See luupnow.ca for details.',
+    links: [
+      { label: 'Terms', href: 'https://luupnow.com/page/termsofservice' },
+      { label: 'Privacy', href: 'https://luupnow.com/page/privacypolicy' },
+      { label: 'Contact', href: 'https://luupnow.com/page/contact-us' }
+    ],
+    social: [
+      { label: 'Instagram', href: 'https://www.instagram.com/luup.now/', icon: 'instagram' },
+      { label: 'Facebook', href: 'https://www.facebook.com/LuupNow/', icon: 'facebook' },
+      { label: 'LinkedIn', href: 'https://www.linkedin.com/company/luuptechnologies/', icon: 'linkedin' },
+      { label: 'X', href: 'https://x.com/LuupNow', icon: 'x' },
+      { label: 'YouTube', href: 'https://www.youtube.com/@luupnowtech', icon: 'youtube' },
+      { label: 'TikTok', href: 'https://www.tiktok.com/@luup.now', icon: 'tiktok' }
+    ],
+    legalOffer: 'Conditions apply. Referral payments are made once a referred customer has joined Luup and completed a qualifying booking of three or more consecutive days, subject to verification. Referrals cannot be credited where your link or code was not used. Cancelled, refunded or uncompleted bookings do not qualify. Full partner terms at luupnow.ca/autoshop-terms.'
+  }
+};
+
+const ICON_PATHS = {
+  'shield-check': [['path', { d: 'M12 3l7 3.2v5.3c0 4.7-3 8.6-7 9.8-4-1.2-7-5.1-7-9.8V6.2L12 3z' }], ['path', { d: 'M9 12.2l2 2 4-4.4' }]],
+  'user-check': [['circle', { cx: 12, cy: 8, r: 3.2 }], ['path', { d: 'M5.5 20c0-3.7 3-6.2 6.5-6.2' }], ['path', { d: 'M14.5 15.5l2 2 3.5-4' }]],
+  pin: [['path', { d: 'M12 21s-6.5-5.9-6.5-11A6.5 6.5 0 1 1 18.5 10c0 5.1-6.5 11-6.5 11z' }], ['circle', { cx: 12, cy: 10, r: 2.2 }]],
+  dollar: [['path', { d: 'M12 3v18' }], ['path', { d: 'M16 7.5c0-1.7-1.8-2.8-4-2.8s-4 1.1-4 2.8c0 1.9 2 2.6 4 3.2s4 1.3 4 3.3c0 1.8-1.8 3-4 3s-4-1.2-4-3' }]],
+  link: [['path', { d: 'M10.5 13.5a3.5 3.5 0 0 0 5 0l3-3a3.5 3.5 0 0 0-5-5l-1.2 1.2' }], ['path', { d: 'M13.5 10.5a3.5 3.5 0 0 0-5 0l-3 3a3.5 3.5 0 0 0 5 5l1.2-1.2' }]],
+  tag: [['path', { d: 'M20 12.5L12.5 20a1.5 1.5 0 0 1-2.1 0l-6.4-6.4a1.5 1.5 0 0 1 0-2.1L11.5 4H19a1 1 0 0 1 1 1v7.5z' }], ['circle', { cx: 15.5, cy: 8.5, r: 1.4, fill: 'currentColor', stroke: 'none' }]],
+  smile: [['circle', { cx: 12, cy: 12, r: 9 }], ['path', { d: 'M8.5 14c.9 1.2 2.1 1.8 3.5 1.8s2.6-.6 3.5-1.8' }], ['path', { d: 'M9 9.5h.01M15 9.5h.01' }]],
+  'no-fleet': [['path', { d: 'M2.5 15.5v-3.2a1.6 1.6 0 0 1 1.2-1.55l2.6-.65 2.3-2.9A2 2 0 0 1 10.15 6.4h3.6a2 2 0 0 1 1.35.52l3.4 3.1 2.35.65a1.6 1.6 0 0 1 1.15 1.54v3.29h-2.2' }], ['path', { d: 'M14.9 15.5H9.1' }], ['circle', { cx: 7.1, cy: 15.7, r: 2 }], ['circle', { cx: 16.9, cy: 15.7, r: 2 }], ['path', { d: 'M8.9 10.4h9.15' }]],
+  leaf: [['path', { d: 'M12 3c4 2 7 6 7 10a7 7 0 0 1-14 0c0-4 3-8 7-10z' }], ['path', { d: 'M12 13v8' }]],
+  'thumbs-up': [['path', { d: 'M7 21V10.5l4.2-7a1.6 1.6 0 0 1 2.9 1.2L13.3 9h4.9a2 2 0 0 1 1.95 2.45l-1.5 7A2 2 0 0 1 16.7 20H7z' }], ['rect', { x: 2.6, y: 10.5, width: 4.4, height: 10.5, rx: 1.2 }]],
+  'maple-leaf': [['path', { d: 'M12 2.6l1.9 3.6 2.5-.9-.8 3.1 3.6-.6-2.1 2.6 4 1.9-3.4 1.5.9 2.6-4.1-.9.3 4.9L12 18.2l-2.8 3.6.3-4.9-4.1.9.9-2.6L2.9 13.7l4-1.9-2.1-2.6 3.6.6-.8-3.1 2.5.9L12 2.6z' }]],
+  cart: [['circle', { cx: 9, cy: 20, r: 1.3 }], ['circle', { cx: 17, cy: 20, r: 1.3 }], ['path', { d: 'M3 4h2l2.4 11.5a2 2 0 0 0 2 1.6h7.6a2 2 0 0 0 2-1.5L21 8H6' }]],
+  box: [['path', { d: 'M3 8l9-5 9 5-9 5-9-5z' }], ['path', { d: 'M3 8v9l9 5 9-5V8' }], ['path', { d: 'M12 13v9' }]],
+  gift: [['rect', { x: 3, y: 8, width: 18, height: 5, rx: 1 }], ['path', { d: 'M5 13v7a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-7' }], ['path', { d: 'M12 8v13' }], ['path', { d: 'M12 8S10.5 3 8 3a2.5 2.5 0 0 0 0 5' }], ['path', { d: 'M12 8s1.5-5 4-5a2.5 2.5 0 0 1 0 5' }]],
+  suitcase: [['rect', { x: 3, y: 8, width: 18, height: 12, rx: 2 }], ['path', { d: 'M9 8V6a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2' }]],
+  people: [['circle', { cx: 8, cy: 9, r: 2.6 }], ['circle', { cx: 17, cy: 10, r: 2.2 }], ['path', { d: 'M3 20c0-3.3 2.5-5.6 5.6-5.6S14 16.7 14 20' }], ['path', { d: 'M14.5 20c.3-2.6 2-4.3 4.3-4.3 1 0 1.9.3 2.6.9' }]],
+  calendar: [['rect', { x: 3, y: 5, width: 18, height: 16, rx: 2 }], ['path', { d: 'M3 10h18' }], ['path', { d: 'M8 3v4' }], ['path', { d: 'M16 3v4' }]],
+  train: [['rect', { x: 5, y: 4, width: 14, height: 13, rx: 4 }], ['circle', { cx: 8.5, cy: 14, r: 1 }], ['circle', { cx: 15.5, cy: 14, r: 1 }], ['path', { d: 'M8 20l-2 2M16 20l2 2' }], ['path', { d: 'M5 10h14' }]],
+  phone: [['rect', { x: 7, y: 2, width: 10, height: 20, rx: 2 }], ['path', { d: 'M11 18h2' }]],
+  id: [['rect', { x: 3, y: 5, width: 18, height: 14, rx: 2 }], ['circle', { cx: 8.5, cy: 11, r: 2 }], ['path', { d: 'M5.5 17c0-2 1.5-3.2 3-3.2s3 1.2 3 3.2' }], ['path', { d: 'M14 9h5M14 13h5' }]],
+  car: [['path', { d: 'M2.5 16.5v-3.1c0-.6.4-1.1 1-1.3l2.2-.5 2.6-3.2c.4-.5 1-.8 1.7-.8h4.6c.7 0 1.4.3 1.9.8l2.5 2.8 1.9.7c.7.2 1.1.8 1.1 1.5v3.1h-2.2' }], ['path', { d: 'M14.7 16.5H9.3' }], ['path', { d: 'M4.7 16.5H2.5' }], ['circle', { cx: 7, cy: 16.8, r: 2.2 }], ['circle', { cx: 17, cy: 16.8, r: 2.2 }], ['path', { d: 'M9.2 11.6h8.3' }]],
+  document: [['rect', { x: 5, y: 3, width: 14, height: 18, rx: 2 }], ['path', { d: 'M8 8h8M8 12h8M8 16h5' }]],
+  shield: [['path', { d: 'M12 3l7 3.2v5.3c0 4.7-3 8.6-7 9.8-4-1.2-7-5.1-7-9.8V6.2L12 3z' }]],
+  'person-check': [['circle', { cx: 10, cy: 8, r: 3 }], ['path', { d: 'M4 20c0-3.7 3-6.2 6.5-6.2 1 0 2 .2 2.8.6' }], ['path', { d: 'M15 17l2 2 4-4.5' }]],
+  play: [['path', { d: 'M8 5.5v13l11-6.5-11-6.5z', fill: 'currentColor', stroke: 'none' }]],
+  arrow: [['path', { d: 'M5 12h14' }], ['path', { d: 'M13 6l6 6-6 6' }]],
+  'chevron-down': [['path', { d: 'M6 9l6 6 6-6' }]],
+  close: [['path', { d: 'M6 6l12 12M18 6L6 18' }]],
+  menu: [['path', { d: 'M4 7h16M4 12h16M4 17h16' }]],
+  instagram: [['rect', { x: 3, y: 3, width: 18, height: 18, rx: 5 }], ['circle', { cx: 12, cy: 12, r: 4 }], ['circle', { cx: 17.2, cy: 6.8, r: 1, fill: 'currentColor', stroke: 'none' }]],
+  facebook: [['path', { d: 'M14 21v-8h2.7l.4-3.2H14V7.8c0-.9.3-1.6 1.7-1.6H17V3.4C16.6 3.3 15.6 3.2 14.5 3.2c-2.3 0-3.9 1.4-3.9 4v2.6H8v3.2h2.6V21H14z', fill: 'currentColor', stroke: 'none' }]],
+  linkedin: [['rect', { x: 3, y: 3, width: 18, height: 18, rx: 3 }], ['circle', { cx: 8, cy: 8.5, r: 1.2, fill: 'currentColor', stroke: 'none' }], ['path', { d: 'M8 11v7' }], ['path', { d: 'M12.5 18v-4c0-1.5 1-2.5 2.5-2.5S17 12.5 17 14v4' }], ['path', { d: 'M12.5 11v7' }]],
+  x: [['path', { d: 'M4 4l16 16' }], ['path', { d: 'M20 4L4 20' }]],
+  youtube: [['rect', { x: 2.5, y: 6, width: 19, height: 12, rx: 3 }], ['path', { d: 'M10.5 9.5v5l4.5-2.5-4.5-2.5z', fill: 'currentColor', stroke: 'none' }]],
+  tiktok: [['path', { d: 'M13.5 3v11.2a2.7 2.7 0 1 1-2.2-2.65' }], ['path', { d: 'M13.5 3c.3 2.2 2 3.9 4.2 4.2' }]]
+};
+
+function boldLuup(text) {
+  if (typeof text !== 'string' || !text.includes('Luup')) return text;
+  const parts = text.split(/(Luup)/g);
+  return parts.map((p, i) => p === 'Luup' ? React.createElement('strong', { key: i, style: { fontWeight: 800 } }, p) : p);
+}
+
+function makeIcon(name, size) {
+  const parts = ICON_PATHS[name] || ICON_PATHS.pin;
+  const children = parts.map((p, i) => React.createElement(p[0], Object.assign({ key: i }, p[1])));
+  return React.createElement('svg', { viewBox: '0 0 24 24', width: size, height: size, fill: 'none', stroke: 'currentColor', strokeWidth: 1.6, strokeLinecap: 'round', strokeLinejoin: 'round' }, children);
+}
+
+// Centralized analytics helper. Every CTA/interaction calls trackEvent() instead of
+// hitting GA4 / Meta Pixel / Mixpanel directly, and every call fails safely if a
+// provider script hasn't loaded. Wire real snippets (gtag.js, fbevents.js, mixpanel)
+// using PAGE_CONFIG.analytics ids before going live.
+function trackEvent(eventName, properties) {
+  if (typeof window.luupTrack === 'function') { window.luupTrack(eventName, properties); return; }
+  const payload = Object.assign({}, properties || {}, { timestamp: new Date().toISOString() });
+  try { if (typeof window.gtag === 'function') window.gtag('event', eventName, payload); } catch (e) {}
+  try { if (typeof window.fbq === 'function') window.fbq('trackCustom', eventName, payload); } catch (e) {}
+  try { if (window.mixpanel && typeof window.mixpanel.track === 'function') window.mixpanel.track(eventName, payload); } catch (e) {}
+}
+
+function fireMeta(kind, name, properties) {
+  try {
+    if (typeof window.fbq !== 'function') return;
+    if (kind === 'standard') window.fbq('track', name, properties || {});
+    else window.fbq('trackCustom', name, properties || {});
+  } catch (e) {}
+}
+
+class Component extends DCLogic {
+  headerRef = React.createRef();
+  state = {
+    mobileMenuOpen: false,
+    scrolled: false,
+    viewport: (typeof window !== 'undefined' && window.innerWidth < 860) ? 'compact' : 'wide',
+    videoStarted: false,
+    videoNoSrcNotice: false,
+    videoMilestones: { p25: false, p50: false, p75: false },
+    openFaq: null,
+    occSlide: 0,
+    form: { firstName: '', lastName: '', email: '', mobile: '', area: '' },
+    formErrors: {},
+    formStatus: 'idle',
+    consent: false,
+    formStarted: false,
+    appModalOpen: false,
+    appModalLocation: null,
+    formModalOpen: false,
+    utm: {}
+  };
+
+  componentDidMount() {
+    this.captureUtm();
+    trackEvent('landing_page_view', Object.assign({
+      page_name: PAGE_CONFIG.pageName,
+      page_number: PAGE_CONFIG.pageNumber,
+      campaign: PAGE_CONFIG.campaign,
+      city: PAGE_CONFIG.city,
+      page_url: PAGE_CONFIG.pageUrl
+    }, this.state.utm));
+    try { if (typeof window.fbq === 'function') window.fbq('track', 'PageView'); } catch (e) {}
+    window.addEventListener('resize', this.handleResize);
+    window.addEventListener('scroll', this.handleScroll, { passive: true });
+    this.handleScroll();
+    this.occInterval = setInterval(() => {
+      if (window.innerWidth >= 860) {
+        this.setState((s) => ({ occSlide: (s.occSlide + 1) % PAGE_CONFIG.occasions.items.length }));
+      }
+    }, 4000);
+  }
+
+  componentWillUnmount() {
+    clearInterval(this.occInterval);
+    window.removeEventListener('resize', this.handleResize);
+    window.removeEventListener('scroll', this.handleScroll);
+  }
+
+  handleResize = () => {
+    const compact = window.innerWidth < 860;
+    if (compact !== (this.state.viewport === 'compact')) this.setState({ viewport: compact ? 'compact' : 'wide' });
+  };
+
+  handleScroll = () => {
+    const scrolled = window.scrollY > 40;
+    if (scrolled !== this.state.scrolled) this.setState({ scrolled });
+  };
+
+  captureUtm = () => {
+    const params = new URLSearchParams(window.location.search);
+    const keys = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term', 'gclid', 'gbraid', 'wbraid', 'fbclid', 'msclkid', 'ttclid', 'li_fat_id'];
+    const utm = {};
+    keys.forEach((k) => { const v = params.get(k); if (v) utm[k] = v; });
+    if (Object.keys(utm).length) {
+      try { sessionStorage.setItem('luup_utm', JSON.stringify(utm)); } catch (e) {}
+    } else {
+      try { const stored = sessionStorage.getItem('luup_utm'); if (stored) Object.assign(utm, JSON.parse(stored)); } catch (e) {}
+    }
+    this.setState({ utm });
+  };
+
+  deviceType = () => (typeof window === 'undefined' ? 'desktop' : window.innerWidth < 768 ? 'mobile' : window.innerWidth < 1024 ? 'tablet' : 'desktop');
+
+  scrollToId = (id) => {
+    const el = document.getElementById(id);
+    if (!el) return;
+    const headerH = this.headerRef.current ? this.headerRef.current.offsetHeight : 72;
+    const reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const top = el.getBoundingClientRect().top + window.scrollY - headerH - 16;
+    window.scrollTo({ top, behavior: reduce ? 'auto' : 'smooth' });
+    this.setState({ mobileMenuOpen: false });
+  };
+
+  handleNavClick = (item) => {
+    trackEvent('navigation_click', { nav_item: item.label, destination_section: item.target });
+    this.scrollToId(item.target);
+  };
+
+  handleAppClick = (location) => {
+    trackEvent('app_download_click', {
+      page_name: PAGE_CONFIG.pageName,
+      campaign: PAGE_CONFIG.campaign,
+      city: PAGE_CONFIG.city,
+      button_location: location,
+      destination: PAGE_CONFIG.appDownloadUrl,
+      device_type: this.deviceType()
+    });
+    fireMeta('custom', 'AppDownloadClick', { button_location: location });
+    this.setState({ appModalOpen: true, appModalLocation: location });
+  };
+
+  handleExploreClick = () => {
+    trackEvent('explore_page_click', { button_location: 'hero' });
+    this.setState({ formModalOpen: true });
+  };
+
+  closeFormModal = () => this.setState({ formModalOpen: false });
+
+  closeAppModal = () => this.setState({ appModalOpen: false });
+
+  handleStoreClick = (store, url) => {
+    trackEvent('app_download_click', {
+      page_name: PAGE_CONFIG.pageName,
+      campaign: PAGE_CONFIG.campaign,
+      city: PAGE_CONFIG.city,
+      button_location: this.state.appModalLocation,
+      destination: url,
+      store,
+      device_type: this.deviceType()
+    });
+    window.open(url, '_blank', 'noopener');
+  };
+
+  toggleMobileMenu = () => this.setState((s) => ({ mobileMenuOpen: !s.mobileMenuOpen }));
+
+  handleVideoPlayClick = () => {
+    trackEvent('video_play', { page_name: PAGE_CONFIG.pageName });
+    if (PAGE_CONFIG.video.src) this.setState({ videoStarted: true });
+    else this.setState({ videoNoSrcNotice: true });
+  };
+
+  handleVideoTimeUpdate = (e) => {
+    const v = e.target;
+    if (!v.duration) return;
+    const pct = (v.currentTime / v.duration) * 100;
+    const m = Object.assign({}, this.state.videoMilestones);
+    let changed = false;
+    [[25, 'p25'], [50, 'p50'], [75, 'p75']].forEach(([n, k]) => {
+      if (pct >= n && !m[k]) { m[k] = true; changed = true; trackEvent('video_' + n + '_percent', {}); }
+    });
+    if (changed) this.setState({ videoMilestones: m });
+  };
+
+  handleVideoEnded = () => trackEvent('video_complete', {});
+
+  goToOccSlide = (i) => this.setState({ occSlide: i });
+
+  handleOccTouchStart = (e) => { this.occTouchX = e.touches[0].clientX; };
+
+  handleOccTouchEnd = (e) => {
+    if (this.occTouchX == null) return;
+    const dx = e.changedTouches[0].clientX - this.occTouchX;
+    const total = PAGE_CONFIG.occasions.items.length;
+    if (dx < -40) this.setState((s) => ({ occSlide: (s.occSlide + 1) % total }));
+    else if (dx > 40) this.setState((s) => ({ occSlide: (s.occSlide - 1 + total) % total }));
+    this.occTouchX = null;
+  };
+
+  toggleFaq = (i) => {
+    const opening = this.state.openFaq !== i;
+    this.setState({ openFaq: opening ? i : null });
+    if (opening) trackEvent('faq_open', { question: PAGE_CONFIG.faq.items[i].q });
+  };
+
+  handleFieldChange = (field, value) => {
+    if (!this.state.formStarted) { this.setState({ formStarted: true }); trackEvent('invite_form_start', { page_name: PAGE_CONFIG.pageName }); }
+    this.setState((s) => ({ form: Object.assign({}, s.form, { [field]: value }), formErrors: Object.assign({}, s.formErrors, { [field]: undefined }) }));
+    if (field === 'area') trackEvent('area_selected', { area: value });
+  };
+
+  handleConsentChange = (checked) => this.setState({ consent: checked, formErrors: Object.assign({}, this.state.formErrors, { consent: undefined }) });
+
+  validateForm = () => {
+    const { firstName, lastName, email, mobile, area } = this.state.form;
+    const errors = {};
+    if (!firstName.trim()) errors.firstName = 'Shop name is required.';
+    if (!lastName.trim()) errors.lastName = 'Your name is required.';
+    if (!area) errors.area = 'Please choose your area.';
+    if (!email.trim()) errors.email = 'Email is required.';
+    else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) errors.email = 'Enter a valid email address.';
+    if (!mobile.trim()) errors.mobile = 'Mobile number is required.';
+    if (!this.state.consent) errors.consent = 'Please check the box to continue.';
+    return errors;
+  };
+
+  handleSubmit = (e) => {
+    e.preventDefault();
+    const errors = this.validateForm();
+    if (Object.keys(errors).length) { this.setState({ formErrors: errors }); return; }
+    trackEvent('invite_form_submit', { page_name: PAGE_CONFIG.pageName, city: PAGE_CONFIG.city, campaign: PAGE_CONFIG.campaign });
+    this.setState({ formStatus: 'submitting' });
+    const { firstName, lastName, email, mobile, area } = this.state.form;
+    fetch(PAGE_CONFIG.formEndpoint, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+      body: JSON.stringify(Object.assign({
+        _subject: 'New LUUP lead — Auto Shop', source_page: 'Auto Shop', form_name: 'Auto Shop application',
+        shop_name: firstName, name: lastName, email, phone: mobile, area,
+        page: PAGE_CONFIG.pageName, page_number: PAGE_CONFIG.pageNumber,
+        city: PAGE_CONFIG.city, campaign: PAGE_CONFIG.campaign,
+        lead_type: PAGE_CONFIG.leadType, page_url: PAGE_CONFIG.pageUrl,
+        referrer: document.referrer || 'direct',
+        submitted_at: new Date().toISOString(),
+        device_type: (window.innerWidth < 768 ? 'mobile' : window.innerWidth < 1024 ? 'tablet' : 'desktop'),
+        landing_page: PAGE_CONFIG.pageUrl,
+        first_referrer: document.referrer || 'direct'
+      }, window.LUUP_ATTRIBUTION || {}, this.state.utm))
+    })
+      .then((res) => { if (!res.ok) throw new Error('submit_failed'); })
+      .then(() => {
+        this.setState({ formStatus: 'success' });
+        // Clean directory URL on the live site; explicit index.html where the host has no directory index (preview).
+        var __ty = /\/index\.html$/i.test(location.pathname) ? '../thank-you/index.html?from=autoshop' : '../thank-you/?from=autoshop';
+        setTimeout(() => { window.location.assign(__ty); }, 350);
+        trackEvent('invite_form_success', { page_name: PAGE_CONFIG.pageName, city: PAGE_CONFIG.city, campaign: PAGE_CONFIG.campaign, area: this.state.form.area });
+        // analytics.js already fires Meta Lead + the Google Ads conversion for
+        // invite_form_success. Only fall back here if it did not load.
+        if (typeof window.luupTrack !== 'function') fireMeta('standard', 'Lead', { city: PAGE_CONFIG.city });
+      })
+      .catch((err) => {
+        this.setState({ formStatus: 'error' });
+        trackEvent('invite_form_error', { page_name: PAGE_CONFIG.pageName, reason: (err && err.message) || 'unknown' });
+      });
+  };
+
+  renderVals() {
+    const s = this.state;
+    const ctaRadius = (this.props.ctaShape ?? 'rounded') === 'pill' ? '999px' : '10px';
+    const heroFocal = this.props.heroFocal ?? 'right';
+    const stickyHeader = this.props.stickyHeader ?? true;
+
+    const navDisplay = s.viewport === 'compact' ? 'none' : 'flex';
+    const hamburgerDisplay = s.viewport === 'compact' ? 'flex' : 'none';
+    const focalMap = { right: '72% 48%', center: '50% 48%', left: '25% 48%' };
+    const isCompact = s.viewport === 'compact';
+    const heroObjectPosition = isCompact ? '58% 38%' : (focalMap[heroFocal] || focalMap.right);
+    const heroOverlay = isCompact
+      ? 'linear-gradient(180deg, rgba(0,0,0,0.15) 0%, rgba(0,0,0,0.55) 55%, rgba(0,0,0,0.8) 100%)'
+      : 'linear-gradient(100deg, rgba(0,0,0,0.82) 0%, rgba(0,0,0,0.62) 34%, rgba(0,0,0,0.32) 60%, rgba(0,0,0,0.12) 100%)';
+    const heroSectionStyle = isCompact
+      ? 'position:relative;overflow:hidden;display:flex;flex-direction:column;background:#fff;'
+      : 'position:relative;overflow:hidden;min-height:min(820px, 88vh);display:flex;align-items:center;';
+    const heroImgStyle = isCompact
+      ? 'position:static;width:100%;height:74vw;max-height:400px;min-height:240px;object-fit:cover;object-position:' + heroObjectPosition + ';display:block;order:2;'
+      : 'position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:' + heroObjectPosition + ';z-index:0;';
+    const heroOverlayStyle = isCompact ? 'display:none;' : 'position:absolute;inset:0;background:' + heroOverlay + ';z-index:1;';
+    const heroContentWrapStyle = isCompact
+      ? 'position:relative;z-index:2;max-width:1200px;margin:0 auto;padding:clamp(14px,3vw,20px) clamp(20px,5vw,64px) 20px;width:100%;order:1;'
+      : 'position:relative;z-index:2;max-width:1200px;margin:0 auto;padding:clamp(56px,12vw,120px) clamp(20px,5vw,64px);width:100%;';
+
+    const errBorder = '#B3261E';
+    const okBorder = '#DDDDDD';
+
+    const faqItems = PAGE_CONFIG.faq.items.map((it, i) => ({
+      q: it.q,
+      aEl: boldLuup(it.a),
+      isOpen: s.openFaq === i,
+      buttonId: 'faq-btn-' + i,
+      panelId: 'faq-panel-' + i,
+      onToggle: () => this.toggleFaq(i),
+      chevronTransform: s.openFaq === i ? 'rotate(180deg)' : 'rotate(0deg)',
+      chevronEl: makeIcon('chevron-down', 18)
+    }));
+
+    const occCards = PAGE_CONFIG.occasions.items.map((o, i) => ({
+      number: String(i + 1).padStart(2, '0'),
+      title: o.label,
+      photo: o.photo || '',
+      noPhoto: !o.photo,
+      photoHint: o.photoHint || 'photo to come'
+    }));
+
+    const whyBenefits = PAGE_CONFIG.whyLuup.benefits.map((b) => ({
+      title: b.title, body: b.body, iconEl: makeIcon(b.icon, 26)
+    }));
+
+    return {
+      logoSrc: PAGE_CONFIG.logo,
+      logoWidth: isCompact ? '53px' : '74px',
+      headerRef: this.headerRef,
+      headerPosition: isCompact ? 'sticky' : (s.scrolled ? 'fixed' : 'absolute'),
+      headerBg: isCompact ? 'rgba(255,255,255,0.96)' : (s.scrolled ? '#0B0B0B' : 'transparent'),
+      headerBorderStyle: isCompact ? '1px solid #DDDDDD' : (s.scrolled ? '1px solid #2A2A2A' : '1px solid transparent'),
+      headerBlur: isCompact || s.scrolled ? 'blur(10px)' : 'none',
+      navTextColor: isCompact ? '#444444' : '#fff',
+      logoFilter: isCompact ? 'brightness(0)' : 'none',
+      hamburgerBorderColor: isCompact ? '#DDDDDD' : (s.scrolled ? 'rgba(255,255,255,0.35)' : 'rgba(255,255,255,0.6)'),
+      navDisplay, hamburgerDisplay, ctaRadius,
+      navItems: PAGE_CONFIG.nav.map((n) => ({ label: n.label, labelEl: boldLuup(n.label), onClick: () => this.handleNavClick(n) })),
+      onNavInterested: () => this.handleExploreClick(),
+      onNavInterestedMobile: () => { this.setState({ mobileMenuOpen: false }); this.handleExploreClick(); },
+      mobileMenuOpen: s.mobileMenuOpen,
+      toggleMobileMenu: this.toggleMobileMenu,
+      menuIconEl: makeIcon(s.mobileMenuOpen ? 'close' : 'menu', 20),
+
+      hero: PAGE_CONFIG.hero,
+      heroBodyEl: boldLuup(PAGE_CONFIG.hero.body),
+      heroImage: PAGE_CONFIG.hero.image,
+      heroImageAlt: PAGE_CONFIG.hero.imageAlt,
+      heroObjectPosition, heroOverlay,
+      heroSectionStyle, heroImgStyle, heroOverlayStyle, heroContentWrapStyle,
+      heroTextColor: isCompact ? '#0B0B0B' : '#fff',
+      heroBodyColor: isCompact ? '#444444' : '#f0f0f0',
+      heroButtonRowStyle: isCompact ? 'display:flex;flex-direction:column;gap:12px;width:100%;max-width:480px;' : 'display:flex;flex-wrap:wrap;gap:14px;',
+      heroBtnExtra: isCompact ? 'width:100%;text-align:center;justify-content:center;display:flex;align-items:center;box-sizing:border-box;' : '',
+      onHeroGetApp: () => { trackEvent('navigation_click', { nav_item: 'How it works', destination_section: 'how-it-works', button_location: 'hero_secondary' }); this.scrollToId('how-it-works'); },
+      onHeroExplore: this.handleExploreClick,
+      offerIconEl: makeIcon('gift', 15),
+      referralIconEl: makeIcon('people', 15),
+      hasOffer: !!PAGE_CONFIG.hero.offerTitle,
+      hasHeroSecondary: !!PAGE_CONFIG.hero.secondaryCta,
+      hasFinalSecondary: !!PAGE_CONFIG.finalCta.secondaryCta,
+      navCtaLabel: PAGE_CONFIG.navCta || 'I am Interested',
+
+      trustItems: PAGE_CONFIG.trust.map((t) => ({ label: t.label, iconEl: makeIcon(t.icon, 22) })),
+      trustBorder: isCompact ? 'none' : '1px solid #DDDDDD',
+      trustMargin: isCompact ? '0' : '28px',
+      roadsideIconEl: makeIcon('phone', 24),
+      shieldIconEl: makeIcon('shield-check', 24),
+      ownersIconEl: makeIcon('thumbs-up', 24),
+      canadaIconEl: makeIcon('maple-leaf', 24),
+
+      video: PAGE_CONFIG.video,
+      showVideo: s.videoStarted,
+      showPlayButton: !s.videoStarted && !s.videoNoSrcNotice,
+      showNotice: s.videoNoSrcNotice,
+      onVideoPlayClick: this.handleVideoPlayClick,
+      onVideoTimeUpdate: this.handleVideoTimeUpdate,
+      onVideoEnded: this.handleVideoEnded,
+      playIconEl: makeIcon('play', 26),
+
+      occasions: PAGE_CONFIG.occasions,
+      occasionsBodyEl: boldLuup(PAGE_CONFIG.occasions.body),
+      occasionItems: PAGE_CONFIG.occasions.items.map((o) => ({ label: o.label, iconEl: makeIcon(o.icon, 20) })),
+      occAspect: isCompact ? '4/3' : '21/9',
+      activeOccCard: occCards[s.occSlide % occCards.length],
+      occVisibleCards: isCompact
+        ? [occCards[s.occSlide % occCards.length]]
+        : [0, 1, 2].map((n) => occCards[(s.occSlide + n) % occCards.length]),
+      occDots: occCards.map((c, i) => ({
+        label: 'Show ' + c.title,
+        onClick: () => this.goToOccSlide(i),
+        size: i === s.occSlide ? '22px' : '8px',
+        color: i === s.occSlide ? '#FF6A3D' : '#DDDDDD'
+      })),
+      onOccTouchStart: this.handleOccTouchStart,
+      onOccTouchEnd: this.handleOccTouchEnd,
+
+      howItWorks: PAGE_CONFIG.howItWorks,
+      steps: PAGE_CONFIG.howItWorks.steps.map((st) => ({
+        num: '0' + st.number,
+        title: st.title,
+        bodyEl: boldLuup(st.body),
+        qr: !!st.qr,
+        iconEl: makeIcon(st.icon, 22),
+        cardStyle: st.accent
+          ? 'background:#FFF1EC;border:1.5px solid #FF6A3D;border-radius:14px;padding:26px 24px;box-shadow:0 18px 40px -24px rgba(255,106,61,0.6);'
+          : 'background:#fff;border:1px solid #DDDDDD;border-radius:14px;padding:26px 24px;',
+        numStyle: st.accent
+          ? 'font-size:13px;font-weight:800;letter-spacing:0.1em;font-family:\'Plus Jakarta Sans\',sans-serif;color:#FF6A3D;'
+          : 'font-size:13px;font-weight:800;letter-spacing:0.1em;font-family:\'Plus Jakarta Sans\',sans-serif;color:#9A9A9A;'
+      })),
+      onHowItWorksQuestions: () => { trackEvent('navigation_click', { nav_item: 'Questions', destination_section: 'faq', button_location: 'how_it_works' }); this.scrollToId('faq'); },
+      onHowItWorksInterested: () => this.handleExploreClick(),
+
+      whyLuup: PAGE_CONFIG.whyLuup,
+      whyLuupHeadingEl: boldLuup(PAGE_CONFIG.whyLuup.heading),
+      whyBenefits,
+
+      form: PAGE_CONFIG.form,
+      formConsentEl: boldLuup(PAGE_CONFIG.form.consentText),
+      formFirstName: s.form.firstName,
+      formLastName: s.form.lastName,
+      formEmail: s.form.email,
+      formMobile: s.form.mobile,
+      formArea: s.form.area,
+      areaOptions: PAGE_CONFIG.areaOptions,
+      onAreaChange: (e) => this.handleFieldChange('area', e.target.value),
+      areaInvalid: !!s.formErrors.area,
+      areaBorder: s.formErrors.area ? errBorder : okBorder,
+      formErrors: s.formErrors,
+      firstNameInvalid: !!s.formErrors.firstName,
+      lastNameInvalid: !!s.formErrors.lastName,
+      emailInvalid: !!s.formErrors.email,
+      mobileInvalid: !!s.formErrors.mobile,
+      firstNameBorder: s.formErrors.firstName ? errBorder : okBorder,
+      lastNameBorder: s.formErrors.lastName ? errBorder : okBorder,
+      emailBorder: s.formErrors.email ? errBorder : okBorder,
+      mobileBorder: s.formErrors.mobile ? errBorder : okBorder,
+      consent: s.consent,
+      onFirstNameChange: (e) => this.handleFieldChange('firstName', e.target.value),
+      onLastNameChange: (e) => this.handleFieldChange('lastName', e.target.value),
+      onEmailChange: (e) => this.handleFieldChange('email', e.target.value),
+      onMobileChange: (e) => this.handleFieldChange('mobile', e.target.value),
+      onConsentChange: (e) => this.handleConsentChange(e.target.checked),
+      onSubmit: this.handleSubmit,
+      formStatus: s.formStatus,
+      formSubmitting: (s.formStatus === 'submitting' || Object.keys(this.validateForm()).length > 0),
+      formStatusError: s.formStatus === 'error',
+      formSuccess: s.formStatus === 'success',
+      formNotSuccess: s.formStatus !== 'success',
+      submitLabel: s.formStatus === 'submitting' ? 'Sending\u2026' : PAGE_CONFIG.form.submitLabel,
+      submitBg: (s.formStatus === 'submitting' || Object.keys(this.validateForm()).length > 0) ? '#5C5C5C' : '#FF6A3D',
+      submitCursor: (s.formStatus === 'submitting' || Object.keys(this.validateForm()).length > 0) ? 'not-allowed' : 'pointer',
+
+      faqItems,
+
+      appModalOpen: s.appModalOpen,
+      closeAppModal: this.closeAppModal,
+      stopPropagation: (e) => e.stopPropagation(),
+      closeIconEl: makeIcon('close', 18),
+      formModalOpen: s.formModalOpen,
+      closeFormModal: this.closeFormModal,
+      onAppStoreClick: () => this.handleStoreClick('app_store', 'https://apps.apple.com/us/app/luup-car-sharing-nearby/id1571154008'),
+      onGooglePlayClick: () => this.handleStoreClick('google_play', 'https://play.google.com/store/apps/details?id=com.ridealike.app'),
+
+      finalCta: PAGE_CONFIG.finalCta,
+      onFinalGetApp: () => this.handleExploreClick(),
+      onFinalHoldInvite: () => this.handleAppClick('final_cta'),
+
+      footer: Object.assign({}, PAGE_CONFIG.footer, {
+        social: PAGE_CONFIG.footer.social.map((soc) => Object.assign({}, soc, { iconEl: makeIcon(soc.icon, 20) }))
+      }),
+      footerCompanyEl: boldLuup(PAGE_CONFIG.footer.company),
+      footerLegalEl: boldLuup(PAGE_CONFIG.footer.legal)
+    };
+  }
+}
+</script>
+</body>
+</html>

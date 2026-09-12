@@ -1,0 +1,21 @@
+# LUUP — luupnow.ca
+
+# Old auto shop URL now points at the new one
+RedirectMatch 301 ^/auto-shop/?$ https://luupnow.ca/autoshop/
+
+# Fintech renamed to Connect
+RedirectMatch 301 ^/fintech/?$ https://luupnow.ca/connect/
+
+# Serve index.html for directory URLs
+DirectoryIndex index.html
+
+# Sensible caching for static assets
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType image/jpeg "access plus 7 days"
+  ExpiresByType image/png "access plus 7 days"
+  ExpiresByType image/svg+xml "access plus 7 days"
+  ExpiresByType text/css "access plus 1 day"
+  ExpiresByType application/javascript "access plus 1 day"
+  ExpiresByType text/html "access plus 0 seconds"
+</IfModule>

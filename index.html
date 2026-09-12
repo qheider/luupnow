@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="LUUP — your neighbourhood car-sharing club." />
+  <meta name="facebook-domain-verification" content="9fet6vb4tbm9g9sc4lm9bou29tb133" />
+  <title>LUUP — Your Neighbourhood Car Sharing Club</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <!-- LUUP analytics: GA4 + Google Ads + Meta Pixel + Mixpanel + UTM capture.
+       All IDs live in analytics.js — edit there, not here. Fires only on luupnow.ca. -->
+  <script src="analytics.js"></script>
+</head>
+<body>
+  <main class="hero">
+    <div class="hero-image" aria-hidden="true"></div>
+    <div class="hero-overlay" aria-hidden="true"></div>
+
+    <header class="header">
+      <a href="https://luupnow.com/" class="logo-link" aria-label="Go to LUUPNow.com">
+        <img src="assets/luup-logo.png" alt="LUUP" class="logo" />
+      </a>
+
+      <div class="nav-cluster">
+        <nav class="offers-nav" aria-label="Offers">
+          <button type="button" class="offers-toggle" aria-expanded="false" aria-controls="offers-menu">
+            Offers
+            <span class="offers-caret" aria-hidden="true"></span>
+          </button>
+          <ul class="offers-menu" id="offers-menu" hidden>
+            <li><a href="renters/">Renters</a></li>
+            <li><a href="autoshop/">Auto Shop</a></li>
+          </ul>
+        </nav>
+        <nav class="nav-links" aria-label="Sections">
+          <a href="connect/">LUUP Connect</a>
+          <a href="technology/">Dual-Use Technology</a>
+        </nav>
+        <button type="button" class="nav-burger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </button>
+        <nav class="mobile-menu" id="mobile-menu" aria-label="Menu" hidden>
+          <span class="mobile-menu-label">Offers</span>
+          <a href="renters/">Renters</a>
+          <a href="autoshop/">Auto Shop</a>
+          <span class="mobile-menu-divider" aria-hidden="true"></span>
+          <a href="connect/">LUUP Connect</a>
+          <a href="technology/">Dual-Use Technology</a>
+        </nav>
+      </div>
+    </header>
+
+    <section class="hero-copy">
+      <span class="proudly-canadian"><img src="assets/flag-canada.svg" alt="" aria-hidden="true" /> Proudly Canadian</span>
+
+      <h1>Life Moves Better<br>with LUUP</h1>
+
+      <p class="subhead">
+        LUUP is a <strong>neighbourhood car-sharing club</strong> connecting you with trusted people and vehicles nearby, so you can access a car whenever life calls for one.
+      </p>
+
+      <div class="hero-ctas">
+        <a class="cta cta-primary" href="https://luupnow.com/authentication/create-profile">Create Profile</a>
+        <a class="cta cta-secondary" href="https://luupnow.com/authentication/sign-in">Sign In</a>
+      </div>
+    </section>
+  </main>
+  <script>
+    (function () {
+      var nav = document.querySelector('.offers-nav');
+      if (!nav) return;
+      var btn = nav.querySelector('.offers-toggle');
+      var menu = nav.querySelector('.offers-menu');
+      function setOpen(open) {
+        btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+        if (open) { menu.removeAttribute('hidden'); } else { menu.setAttribute('hidden', ''); }
+      }
+      btn.addEventListener('click', function (e) {
+        e.stopPropagation();
+        setOpen(btn.getAttribute('aria-expanded') !== 'true');
+      });
+      document.addEventListener('click', function (e) { if (!nav.contains(e.target)) setOpen(false); });
+      document.addEventListener('keydown', function (e) { if (e.key === 'Escape') setOpen(false); });
+
+      var burger = document.querySelector('.nav-burger');
+      var mobileMenu = document.querySelector('.mobile-menu');
+      if (!burger || !mobileMenu) return;
+      function setMobileOpen(open) {
+        burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+        burger.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+        if (open) { mobileMenu.removeAttribute('hidden'); } else { mobileMenu.setAttribute('hidden', ''); }
+      }
+      burger.addEventListener('click', function (e) {
+        e.stopPropagation();
+        setOpen(false);
+        setMobileOpen(burger.getAttribute('aria-expanded') !== 'true');
+      });
+      document.addEventListener('click', function (e) {
+        if (!mobileMenu.contains(e.target) && e.target !== burger) setMobileOpen(false);
+      });
+      document.addEventListener('keydown', function (e) { if (e.key === 'Escape') setMobileOpen(false); });
+    })();
+  </script>
+  <script>
+    // Hosts without a directory index (design preview) need the explicit file.
+    (function () {
+      if (!/\/index\.html$/i.test(location.pathname)) return;
+      document.querySelectorAll('a[href$="/"]').forEach(function (a) {
+        var h = a.getAttribute('href');
+        if (!/^(https?:|\/|#)/.test(h)) a.setAttribute('href', h + 'index.html');
+      });
+    })();
+  </script>
+</body>
+</html>

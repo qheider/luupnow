@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="../support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Become a Luup Influencer — turn your reach into long-term revenue</title>
+  <meta name="description" content="Share Luup with the people around you and earn long-term revenue. Sign up to become a Luup Influencer." />
+  <meta name="robots" content="noindex, nofollow" />
+  <link rel="canonical" href="https://luupnow.ca/influencer/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="LUUP" />
+  <meta property="og:title" content="Become a Luup Influencer" />
+  <meta property="og:description" content="Share it. Bring your people. Get rewarded." />
+  <meta property="og:url" content="https://luupnow.ca/influencer/" />
+  <link rel="icon" href="../assets/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Roboto:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    html { scroll-behavior: smooth; }
+    *, *::before, *::after { box-sizing: border-box; }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+    body { margin: 0; font-family: 'Roboto', -apple-system, BlinkMacSystemFont, sans-serif; -webkit-font-smoothing: antialiased; overflow-x: hidden; background: #0B0B0B; }
+    a { color: #FF6A3D; }
+    a:hover { color: #FF8A57; }
+    *:focus-visible { outline: 2px solid #FF6A3D !important; outline-offset: 2px; }
+    input, select, button, textarea { font-family: inherit; }
+    input::placeholder { color: #A9A9A9; }
+  </style>
+<template id="__bundler_thumbnail" data-bg-color="#0B0B0B">
+  <svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+    <rect width="1200" height="800" fill="#0B0B0B"></rect>
+    <text x="600" y="380" font-family="sans-serif" font-weight="800" font-size="130" fill="#ffffff" text-anchor="middle">LUUP</text>
+    <text x="600" y="470" font-family="sans-serif" font-weight="700" font-size="56" fill="#FF6A3D" text-anchor="middle">INFLUENCER</text>
+  </svg>
+</template>
+  <meta name="facebook-domain-verification" content="9fet6vb4tbm9g9sc4lm9bou29tb133" />
+  <!-- LUUP analytics: GA4 + Google Ads + Meta Pixel + Mixpanel + UTM capture.
+       All IDs live in analytics.js — edit there, not here. Fires only on luupnow.ca. -->
+  <script src="../analytics.js"></script>
+</helmet>
+
+<a href="#hero-heading" style="position:absolute;left:-9999px;top:auto;background:#fff;color:#0B0B0B;padding:12px 20px;border-radius:8px;z-index:200;font-size:14px;font-weight:600;" style-focus="position:fixed;left:16px;top:16px;">Skip to content</a>
+
+<div style="{{rootStyle}}">
+
+<header style="order:{{ordHeader}};position:relative;z-index:20;background:#0B0B0B;">
+  <div style="max-width:1240px;margin:0 auto;padding:16px clamp(20px,5vw,64px);display:flex;align-items:center;justify-content:space-between;gap:20px;">
+    <a href="#top" aria-label="Luup home" style="display:flex;align-items:center;">
+      <img src="../assets/luup-logo-white.png" alt="Luup" style="width:74px;height:auto;max-height:48px;display:block;object-fit:contain;" />
+    </a>
+    <nav aria-label="Primary" style="display:{{navDisplay}};align-items:center;gap:clamp(16px,3vw,32px);flex-wrap:wrap;justify-content:flex-end;">
+      <a href="https://luupnow.com/page/about-us" target="_blank" rel="noopener noreferrer" onClick="{{onAboutLuupClick}}" style="font-family:'Plus Jakarta Sans',sans-serif;font-size:14.5px;font-weight:600;color:#FFFFFF;text-decoration:none;" style-hover="color:#FF6A3D;">What is Luup</a>
+      <a href="#how" style="font-family:'Plus Jakarta Sans',sans-serif;font-size:14.5px;font-weight:600;color:#FFFFFF;text-decoration:none;" style-hover="color:#FF6A3D;">How to earn</a>
+    </nav>
+    <button type="button" aria-label="Menu" aria-expanded="{{menuOpen}}" onClick="{{toggleMenu}}" style="display:{{burgerDisplay}};background:none;border:1px solid rgba(255,255,255,0.4);border-radius:10px;width:44px;height:44px;align-items:center;justify-content:center;cursor:pointer;color:#FFFFFF;font-size:19px;line-height:1;">{{menuGlyph}}</button>
+  </div>
+  <div style="{{menuPanelStyle}}">
+    <a href="https://luupnow.com/page/about-us" target="_blank" rel="noopener noreferrer" onClick="{{onMenuAbout}}" style="font-family:'Plus Jakarta Sans',sans-serif;font-size:16px;font-weight:600;color:#FFFFFF;text-decoration:none;padding:12px 0;min-height:44px;display:flex;align-items:center;">What is Luup</a>
+    <a href="#how" onClick="{{onMenuHow}}" style="font-family:'Plus Jakarta Sans',sans-serif;font-size:16px;font-weight:600;color:#FFFFFF;text-decoration:none;padding:12px 0;min-height:44px;display:flex;align-items:center;">How to earn</a>
+    <button type="button" onClick="{{onMenuCta}}" style="margin-top:10px;background:#FF6A3D;color:#0B0B0B;border:none;padding:15px 24px;border-radius:999px;font-size:16px;font-weight:800;font-family:'Plus Jakarta Sans',sans-serif;cursor:pointer;min-height:48px;width:100%;">I'm Interested</button>
+  </div>
+</header>
+
+<sc-if value="{{aboutModalOpen}}" hint-placeholder-val="{{false}}">
+  <div role="dialog" aria-modal="true" aria-label="About Luup" onClick="{{onAboutModalClose}}" style="position:fixed;inset:0;background:rgba(0,0,0,0.65);z-index:1000;display:flex;align-items:center;justify-content:center;padding:20px;">
+    <div onClick="{{stopPropagation}}" style="background:#0B0B0B;border:1px solid #2A2A2A;border-radius:18px;width:100%;max-width:880px;height:min(86vh,820px);overflow:hidden;display:flex;flex-direction:column;">
+      <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 16px 12px 22px;">
+        <span style="color:#FFFFFF;font-size:15px;font-weight:800;font-family:'Plus Jakarta Sans',sans-serif;">About Luup</span>
+        <div style="display:flex;align-items:center;gap:16px;">
+          <a href="https://luupnow.com/page/about-us" target="_blank" rel="noopener noreferrer" style="color:#FF6A3D;font-size:13px;font-weight:700;font-family:'Plus Jakarta Sans',sans-serif;text-decoration:none;">Open in new tab</a>
+          <button type="button" aria-label="Close" onClick="{{onAboutModalClose}}" style="background:transparent;border:none;color:#FFFFFF;font-size:22px;line-height:1;cursor:pointer;padding:4px 8px;">×</button>
+        </div>
+      </div>
+      <iframe src="https://luupnow.com/page/about-us" title="About Luup" style="border:none;width:100%;flex:1;background:#FFFFFF;"></iframe>
+    </div>
+  </div>
+</sc-if>
+
+<section id="top" style="{{heroSecStyle}}">
+  <div style="{{heroMediaStyle}}">
+    <img src="../assets/influencer-hero.jpg" alt="Three friends talking together beside a car on a neighbourhood street." fetchpriority="high" style="{{heroImgStyle}}" />
+    <div style="{{heroOverlayA}}"></div>
+    <div style="{{heroOverlayB}}"></div>
+  </div>
+  <div style="{{heroCopyStyle}}">
+    <p style="font-family:'Plus Jakarta Sans',sans-serif;font-size:clamp(12px,1.2vw,15px);font-weight:600;letter-spacing:0.01em;color:#FFFFFF;margin:0 0 30px;max-width:min(100%,46vw);text-wrap:balance;">Canadian Neighborhood Car Sharing Club</p>
+    <h1 id="hero-heading" style="font-family:'Plus Jakarta Sans',sans-serif;font-size:clamp(44px,7.8vw,104px);line-height:0.96;font-weight:800;letter-spacing:-0.035em;color:#FFFFFF;margin:0 0 26px;text-wrap:balance;">Earn <span style="color:#FF6A3D;">$25</span> For<br />Every Referral</h1>
+    <p style="font-family:'Plus Jakarta Sans',sans-serif;font-size:clamp(24px,3.2vw,44px);line-height:1.15;font-weight:400;letter-spacing:-0.02em;color:#FFFFFF;margin:0 0 12px;max-width:min(100%,62vw);text-wrap:balance;">Become a <span style="color:#FF6A3D;">Luup</span> Influencer</p>
+    <div style="display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-top:26px;">
+      <button type="button" onClick="{{onHeroCta}}" style="background:#FF6A3D;color:#0B0B0B;border:none;padding:15px 52px;border-radius:999px;font-size:16px;font-weight:800;font-family:'Plus Jakarta Sans',sans-serif;cursor:pointer;min-height:50px;transition:transform .2s ease;" style-hover="transform:translateY(-1px);">I'm Interested</button>
+      <button type="button" onClick="{{onAboutModalOpen}}" style="background:transparent;color:#FFFFFF;border:1.5px solid rgba(255,255,255,0.55);padding:15px 28px;border-radius:999px;font-size:16px;font-weight:700;font-family:'Plus Jakarta Sans',sans-serif;min-height:50px;display:flex;align-items:center;cursor:pointer;transition:transform .2s ease;" style-hover="transform:translateY(-1px);border-color:#FFFFFF;">About Luup</button>
+    </div>
+  </div>
+</section>
+
+<div style="{{bandStyle}}">
+  <section id="why" style="{{whySecStyle}}">
+    <div style="min-width:0;">
+      <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-size:clamp(28px,4vw,46px);line-height:1.1;font-weight:800;letter-spacing:-0.025em;color:#FFFFFF;margin:0 0 clamp(28px,3.5vw,40px);text-wrap:pretty;">Why Become a LUUP Influencer?</h2>
+      <div style="display:flex;flex-direction:column;gap:26px;">
+        <sc-for list="{{benefits}}" as="b" hint-placeholder-count="3">
+          <div style="display:grid;grid-template-columns:46px minmax(0,1fr);gap:18px;align-items:start;">
+            <span style="width:46px;height:46px;flex:none;border-radius:14px;background:rgba(255,106,61,0.14);color:#FF6A3D;display:flex;align-items:center;justify-content:center;">{{b.iconEl}}</span>
+            <div>
+              <h3 style="font-family:'Plus Jakarta Sans',sans-serif;font-size:19px;font-weight:800;color:#FFFFFF;margin:0 0 7px;line-height:1.25;">{{b.title}}</h3>
+              <p style="font-size:15px;line-height:1.65;color:#D8D8D8;margin:0;text-wrap:pretty;">{{b.body}}</p>
+              <sc-if value="{{b.hasBody2}}" hint-placeholder-val="{{false}}">
+                <p style="font-size:15px;line-height:1.65;color:#D8D8D8;margin:10px 0 0;text-wrap:pretty;">{{b.body2}}</p>
+              </sc-if>
+            </div>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+  </section>
+
+  <section id="signup-band" style="{{formSecStyle}}">
+      <div id="signup" style="min-width:0;background:#0B0B0B;border:1px solid #343434;border-radius:20px;padding:clamp(24px,3vw,34px);box-shadow:0 40px 80px -40px rgba(0,0,0,0.9);">
+        <sc-if value="{{formSuccess}}" hint-placeholder-val="{{false}}">
+          <div role="status" style="padding:8px 0;">
+            <p style="margin:0 0 8px;font-family:'Plus Jakarta Sans',sans-serif;font-size:20px;font-weight:800;color:#FF6A3D;">Thank you!</p>
+            <p style="margin:0;font-size:15px;line-height:1.6;color:#FF9F7D;">Your information has been submitted successfully. We’ll reach out to you shortly.</p>
+          </div>
+        </sc-if>
+        <sc-if value="{{formNotSuccess}}" hint-placeholder-val="{{true}}">
+          <form onSubmit="{{onSubmit}}" noValidate="{{true}}" style="display:flex;flex-direction:column;gap:16px;">
+            <div>
+              <label htmlFor="inf-name" style="display:block;font-size:13px;font-weight:700;letter-spacing:0.02em;color:#FFFFFF;margin-bottom:7px;font-family:'Plus Jakarta Sans',sans-serif;">Name</label>
+              <input id="inf-name" name="name" type="text" autoComplete="name" placeholder="Your full name" value="{{formName}}" onChange="{{onNameChange}}" aria-invalid="{{nameInvalid}}" style="width:100%;padding:14px 16px;border-radius:12px;border:1.5px solid {{nameBorder}};background:#1A1A1A;color:#FFFFFF;font-size:16px;min-height:48px;" />
+              <sc-if value="{{errors.name}}" hint-placeholder-val="{{false}}"><p role="alert" style="margin:7px 0 0;font-size:13px;color:#FF8A80;">{{errors.name}}</p></sc-if>
+            </div>
+            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;">
+            <div>
+              <label htmlFor="inf-email" style="display:block;font-size:13px;font-weight:700;letter-spacing:0.02em;color:#FFFFFF;margin-bottom:7px;font-family:'Plus Jakarta Sans',sans-serif;">Email address</label>
+              <input id="inf-email" name="email" type="email" autoComplete="email" inputMode="email" placeholder="you@example.com" value="{{formEmail}}" onChange="{{onEmailChange}}" aria-invalid="{{emailInvalid}}" style="width:100%;padding:14px 16px;border-radius:12px;border:1.5px solid {{emailBorder}};background:#1A1A1A;color:#FFFFFF;font-size:16px;min-height:48px;" />
+              <sc-if value="{{errors.email}}" hint-placeholder-val="{{false}}"><p role="alert" style="margin:7px 0 0;font-size:13px;color:#FF8A80;">{{errors.email}}</p></sc-if>
+            </div>
+            <div>
+              <label htmlFor="inf-phone" style="display:block;font-size:13px;font-weight:700;letter-spacing:0.02em;color:#FFFFFF;margin-bottom:7px;font-family:'Plus Jakarta Sans',sans-serif;">Phone number</label>
+              <input id="inf-phone" name="phone" type="tel" autoComplete="tel" inputMode="tel" placeholder="(604) 000-0000" value="{{formPhone}}" onChange="{{onPhoneChange}}" aria-invalid="{{phoneInvalid}}" style="width:100%;padding:14px 16px;border-radius:12px;border:1.5px solid {{phoneBorder}};background:#1A1A1A;color:#FFFFFF;font-size:16px;min-height:48px;" />
+              <sc-if value="{{errors.phone}}" hint-placeholder-val="{{false}}"><p role="alert" style="margin:7px 0 0;font-size:13px;color:#FF8A80;">{{errors.phone}}</p></sc-if>
+            </div>
+            </div>
+            <sc-if value="{{formStatusError}}" hint-placeholder-val="{{false}}"><p role="alert" style="margin:0;font-size:13.5px;color:#FF8A80;">Something went wrong on our end — please try again.</p></sc-if>
+            <button type="submit" disabled="{{submitting}}" style="margin-top:4px;background:{{submitBg}};border:none;padding:17px 24px;border-radius:999px;font-size:16.5px;font-weight:800;font-family:'Plus Jakarta Sans',sans-serif;color:{{submitColor}};cursor:{{submitCursor}};min-height:52px;transition:background .2s ease, transform .2s ease;" style-hover="transform:translateY(-2px);">{{submitLabel}}</button>
+          </form>
+        </sc-if>
+      </div>
+  </section>
+</div>
+
+<section id="how" style="order:{{ordHow}};background:#FFFFFF;padding:clamp(56px,8vw,104px) 0;">
+  <div style="max-width:1140px;margin:0 auto;padding:0 clamp(20px,5vw,64px);">
+    <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-size:clamp(28px,4vw,46px);line-height:1.1;font-weight:800;letter-spacing:-0.025em;color:#0B0B0B;margin:0 0 clamp(32px,4vw,52px);">How to earn</h2>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:clamp(20px,3vw,32px);">
+      <sc-for list="{{steps}}" as="st" hint-placeholder-count="3">
+        <div style="display:flex;flex-direction:column;gap:14px;border-top:2px solid #DDDDDD;padding-top:22px;">
+          <span style="font-family:'Plus Jakarta Sans',sans-serif;font-size:clamp(44px,5vw,64px);font-weight:800;line-height:0.9;letter-spacing:-0.04em;color:#FF6A3D;">{{st.n}}</span>
+          <h3 style="font-family:'Plus Jakarta Sans',sans-serif;font-size:clamp(22px,2.4vw,28px);font-weight:800;color:#0B0B0B;margin:0;line-height:1.15;">{{st.title}}</h3>
+          <p style="font-size:15.5px;line-height:1.6;color:#444444;margin:0;text-wrap:pretty;">{{st.body}}</p>
+        </div>
+      </sc-for>
+    </div>
+    <div style="margin-top:clamp(36px,5vw,56px);">
+      <button type="button" onClick="{{onHowCta}}" style="background:#FF6A3D;color:#FFFFFF;border:none;padding:17px 32px;border-radius:999px;font-size:16.5px;font-weight:800;font-family:'Plus Jakarta Sans',sans-serif;cursor:pointer;min-height:52px;transition:transform .2s ease;" style-hover="transform:translateY(-2px);">I'm Interested</button>
+    </div>
+  </div>
+</section>
+
+<footer id="contact" style="order:{{ordFooter}};padding:clamp(48px,7vw,72px) 0 36px;background:#0B0B0B;">
+  <div style="max-width:1240px;margin:0 auto;padding:0 clamp(20px,5vw,64px);">
+    <img src="../assets/luup-logo-white.png" alt="Luup" style="width:100px;height:auto;display:block;margin-bottom:28px;" />
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:32px;">
+      <div>
+        <p style="margin:0 0 6px;font-weight:700;font-size:14.5px;color:#fff;">Luup Technologies Corp.</p>
+        <p style="margin:0 0 4px;font-size:13.5px;color:#fff;">21 Braid St, New Westminster, BC V3L 3P4</p>
+        <p style="margin:0 0 12px;font-size:13.5px;color:#fff;"><a href="tel:+18777057040" style="color:#fff;text-decoration:none;">1 (877) 705-7040</a></p>
+        <hr style="border:none;border-top:1px solid #2A2A2A;margin:0 0 12px;" />
+        <p style="margin:0 0 12px;font-size:13.5px;color:#fff;"><a href="mailto:hey@luupnow.com" style="color:#FF6A3D;text-decoration:none;">hey@luupnow.com</a> · <a href="https://luupnow.com" style="color:#FF6A3D;text-decoration:none;">luupnow.com</a></p>
+        <div style="display:flex;gap:16px;flex-wrap:wrap;">
+          <sc-for list="{{footerLinks}}" as="link" hint-placeholder-count="3">
+            <a href="{{link.href}}" style="font-size:13.5px;color:#fff;text-decoration:none;">{{link.label}}</a>
+          </sc-for>
+        </div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:18px;align-items:flex-start;">
+        <div style="display:flex;gap:12px;flex-wrap:wrap;">
+          <a href="https://apps.apple.com/us/app/luup-car-sharing-nearby/id1571154008" target="_blank" rel="noopener noreferrer" onClick="{{onAppStoreClick}}" style="background:#FFFFFF;color:#0B0B0B;text-decoration:none;padding:11px 20px;border-radius:10px;font-size:14.5px;font-weight:700;font-family:'Plus Jakarta Sans',sans-serif;min-height:48px;display:flex;align-items:center;gap:9px;transition:transform .2s ease;" style-hover="transform:translateY(-1px);color:#0B0B0B;"><svg width="19" height="22" viewBox="0 0 384 512" fill="currentColor" aria-hidden="true"><path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"></path></svg>App Store</a>
+          <a href="https://play.google.com/store/apps/details?id=com.ridealike.app" target="_blank" rel="noopener noreferrer" onClick="{{onGooglePlayClick}}" style="background:transparent;color:#FFFFFF;text-decoration:none;border:1.5px solid #FFFFFF;padding:11px 20px;border-radius:10px;font-size:14.5px;font-weight:700;font-family:'Plus Jakarta Sans',sans-serif;min-height:48px;display:flex;align-items:center;gap:9px;transition:transform .2s ease;" style-hover="transform:translateY(-1px);color:#FFFFFF;"><svg width="19" height="21" viewBox="0 0 512 512" fill="currentColor" aria-hidden="true"><path d="M325.3 234.3 104.6 13l280.8 161.2-60.1 60.1zM47 0C34 6.8 25.3 19.2 25.3 35.3v441.3c0 16.1 8.7 28.5 21.7 35.3l256.6-256L47 0zm425.2 225.6-58.9-34.1-65.7 65.5 65.7 65.5 60.1-34.1c18-14.3 18-46.5-1.2-62.8zM104.6 499l280.8-161.2-60.1-60.1L104.6 499z"></path></svg>Google Play</a>
+        </div>
+        <div style="display:flex;gap:16px;align-items:flex-start;flex-wrap:wrap;">
+        <sc-for list="{{socials}}" as="soc" hint-placeholder-count="6">
+          <a href="{{soc.href}}" aria-label="{{soc.label}}" target="_blank" rel="noopener noreferrer" style="color:#fff;display:flex;">{{soc.iconEl}}</a>
+        </sc-for>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+const PAGE_CONFIG = {
+  pageNumber: 5,
+  pageName: 'Influencer - LUUP',
+  campaign: 'Influencer',
+  wave: 'Wave 1',
+  city: 'Metro Vancouver',
+  pageUrl: 'https://luupnow.ca/influencer',
+  formEndpoint: 'https://formspree.io/f/xdenypay'
+};
+
+const ICON_PATHS = {
+  share: [['circle', { cx: 18, cy: 5, r: 2.6 }], ['circle', { cx: 6, cy: 12, r: 2.6 }], ['circle', { cx: 18, cy: 19, r: 2.6 }], ['path', { d: 'M8.4 10.8l7.2-4.2M8.4 13.2l7.2 4.2' }]],
+  repeat: [['path', { d: 'M4 9V7.5A2.5 2.5 0 0 1 6.5 5H18l-2.5-2.5M20 15v1.5A2.5 2.5 0 0 1 17.5 19H6l2.5 2.5' }]],
+  card: [['rect', { x: 3, y: 6, width: 18, height: 12, rx: 2.5 }], ['path', { d: 'M3 10.5h18M6.5 14.5h4' }]],
+  people: [['circle', { cx: 8, cy: 9, r: 2.6 }], ['circle', { cx: 17, cy: 10, r: 2.2 }], ['path', { d: 'M3 20c0-3.3 2.5-5.6 5.6-5.6S14 16.7 14 20' }], ['path', { d: 'M14.5 20c.3-2.6 2-4.3 4.3-4.3 1 0 1.9.3 2.6.9' }]],
+  shield: [['path', { d: 'M12 3l7 3.2v5.3c0 4.7-3 8.6-7 9.8-4-1.2-7-5.1-7-9.8V6.2L12 3z' }], ['path', { d: 'M9 12.2l2 2 4-4.4' }]],
+  instagram: [['rect', { x: 3, y: 3, width: 18, height: 18, rx: 5 }], ['circle', { cx: 12, cy: 12, r: 4 }], ['circle', { cx: 17.2, cy: 6.8, r: 1, fill: 'currentColor', stroke: 'none' }]],
+  facebook: [['path', { d: 'M14 21v-8h2.7l.4-3.2H14V7.8c0-.9.3-1.6 1.7-1.6H17V3.4C16.6 3.3 15.6 3.2 14.5 3.2c-2.3 0-3.9 1.4-3.9 4v2.6H8v3.2h2.6V21H14z', fill: 'currentColor', stroke: 'none' }]],
+  linkedin: [['rect', { x: 3, y: 3, width: 18, height: 18, rx: 3 }], ['circle', { cx: 8, cy: 8.5, r: 1.2, fill: 'currentColor', stroke: 'none' }], ['path', { d: 'M8 11v7' }], ['path', { d: 'M12.5 18v-4c0-1.5 1-2.5 2.5-2.5S17 12.5 17 14v4' }], ['path', { d: 'M12.5 11v7' }]],
+  x: [['path', { d: 'M4 4l16 16' }], ['path', { d: 'M20 4L4 20' }]],
+  youtube: [['rect', { x: 2.5, y: 6, width: 19, height: 12, rx: 3 }], ['path', { d: 'M10.5 9.5v5l4.5-2.5-4.5-2.5z', fill: 'currentColor', stroke: 'none' }]],
+  tiktok: [['path', { d: 'M13.5 3v11.2a2.7 2.7 0 1 1-2.2-2.65' }], ['path', { d: 'M13.5 3c.3 2.2 2 3.9 4.2 4.2' }]]
+};
+
+function makeIcon(name, size) {
+  const parts = ICON_PATHS[name] || ICON_PATHS.share;
+  const children = parts.map((p, i) => React.createElement(p[0], Object.assign({ key: i }, p[1])));
+  return React.createElement('svg', { viewBox: '0 0 24 24', width: size, height: size, fill: 'none', stroke: 'currentColor', strokeWidth: 1.6, strokeLinecap: 'round', strokeLinejoin: 'round' }, children);
+}
+
+function trackEvent(eventName, properties) {
+  if (typeof window.luupTrack === 'function') { window.luupTrack(eventName, properties); return; }
+  const payload = Object.assign({}, properties || {}, { timestamp: new Date().toISOString() });
+  try { if (typeof window.gtag === 'function') window.gtag('event', eventName, payload); } catch (e) {}
+  try { if (typeof window.fbq === 'function') window.fbq('trackCustom', eventName, payload); } catch (e) {}
+  try { if (window.mixpanel && typeof window.mixpanel.track === 'function') window.mixpanel.track(eventName, payload); } catch (e) {}
+}
+
+const BENEFITS = [
+  { icon: 'repeat', title: 'Earn 1% From Your Referrals', body: 'We value the community and trust you bring to LUUP. Earn 1% of LUUP’s eligible revenue generated by the people you refer during their first 12 months on the platform.', body2: 'You’re rewarded not just for making an introduction, but for bringing active members into the LUUP community.' },
+  { icon: 'shield', title: 'We Do the Heavy Lifting', body: 'LUUP handles verification, insurance, bookings and payouts. You make the connection; we take care of the rest.' },
+  { icon: 'people', title: 'Meet a Real Neighbourhood Need', body: 'Cars sit unused while neighbours need flexible access. Your reach helps bring them together.' }
+];
+
+const STEPS = [
+  { n: '1', title: 'Share', body: 'Post your personal link and invite the people already around you — friends, neighbours, followers.' },
+  { n: '2', title: 'Connect', body: 'They sign up, get verified, and start sharing or booking a car in your neighbourhood.' },
+  { n: '3', title: 'Earn', body: 'You get paid on their activity, month after month, straight to your account.' }
+];
+
+const FOOTER_LINKS = [
+  { label: 'Terms', href: 'https://luupnow.com/page/termsofservice' },
+  { label: 'Privacy', href: 'https://luupnow.com/page/privacypolicy' },
+  { label: 'Contact', href: 'https://luupnow.com/page/contact-us' }
+];
+
+const SOCIALS = [
+  { label: 'Instagram', href: 'https://www.instagram.com/luup.now/', icon: 'instagram' },
+  { label: 'Facebook', href: 'https://www.facebook.com/LuupNow/', icon: 'facebook' },
+  { label: 'LinkedIn', href: 'https://www.linkedin.com/company/luuptechnologies/', icon: 'linkedin' },
+  { label: 'X', href: 'https://x.com/LuupNow', icon: 'x' },
+  { label: 'YouTube', href: 'https://www.youtube.com/@luupnowtech', icon: 'youtube' },
+  { label: 'TikTok', href: 'https://www.tiktok.com/@luup.now', icon: 'tiktok' }
+];
+
+class Component extends DCLogic {
+  state = {
+    compact: (typeof window !== 'undefined' && window.innerWidth < 900),
+    form: { name: '', email: '', phone: '' },
+    errors: {},
+    status: 'idle',
+    started: false,
+    utm: {}
+  };
+
+  componentDidMount() {
+    this.captureUtm();
+    trackEvent('landing_page_view', Object.assign({
+      page_name: PAGE_CONFIG.pageName,
+      page_number: PAGE_CONFIG.pageNumber,
+      campaign: PAGE_CONFIG.campaign,
+      city: PAGE_CONFIG.city,
+      page_url: PAGE_CONFIG.pageUrl
+    }, this.state.utm));
+    try { if (typeof window.fbq === 'function') window.fbq('track', 'PageView'); } catch (e) {}
+    window.addEventListener('resize', this.handleResize);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.handleResize);
+  }
+
+  handleResize = () => {
+    const compact = window.innerWidth < 900;
+    if (compact !== this.state.compact) this.setState({ compact });
+  };
+
+  captureUtm = () => {
+    const params = new URLSearchParams(window.location.search);
+    const keys = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term', 'gclid', 'gbraid', 'wbraid', 'fbclid', 'msclkid', 'ttclid', 'li_fat_id'];
+    const utm = {};
+    keys.forEach((k) => { const v = params.get(k); if (v) utm[k] = v; });
+    if (Object.keys(utm).length) {
+      try { sessionStorage.setItem('luup_utm', JSON.stringify(utm)); } catch (e) {}
+    } else {
+      try { const stored = sessionStorage.getItem('luup_utm'); if (stored) Object.assign(utm, JSON.parse(stored)); } catch (e) {}
+    }
+    this.setState({ utm });
+  };
+
+  scrollToSignup = (location) => {
+    trackEvent('influencer_cta_click', { button_location: location, campaign: PAGE_CONFIG.campaign });
+    const el = document.getElementById('signup');
+    if (!el) return;
+    const reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    window.scrollTo({ top: el.getBoundingClientRect().top + window.scrollY - 24, behavior: reduce ? 'auto' : 'smooth' });
+    const first = document.getElementById('inf-name');
+    if (first) setTimeout(() => first.focus({ preventScroll: true }), reduce ? 0 : 500);
+  };
+
+  handleField = (field, value) => {
+    if (!this.state.started) { this.setState({ started: true }); trackEvent('influencer_form_start', { page_name: PAGE_CONFIG.pageName }); }
+    this.setState((s) => ({ form: Object.assign({}, s.form, { [field]: value }), errors: Object.assign({}, s.errors, { [field]: undefined }) }));
+  };
+
+  validate = () => {
+    const { name, email, phone } = this.state.form;
+    const errors = {};
+    if (!name.trim()) errors.name = 'Name is required.';
+    if (!email.trim()) errors.email = 'Email is required.';
+    else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) errors.email = 'Enter a valid email address.';
+    if (!phone.trim()) errors.phone = 'Phone number is required.';
+    return errors;
+  };
+
+  handleSubmit = (e) => {
+    e.preventDefault();
+    const errors = this.validate();
+    if (Object.keys(errors).length) { this.setState({ errors }); return; }
+    trackEvent('invite_form_submit', { page_name: PAGE_CONFIG.pageName, city: PAGE_CONFIG.city, campaign: PAGE_CONFIG.campaign });
+    this.setState({ status: 'submitting' });
+    const { name, email, phone } = this.state.form;
+    fetch(PAGE_CONFIG.formEndpoint, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+      body: JSON.stringify(Object.assign({
+        _subject: 'New LUUP lead — Influencer', source_page: 'Influencer', form_name: 'Influencer sign-up', wave: PAGE_CONFIG.wave,
+        name: name, email: email, phone: phone,
+        page: PAGE_CONFIG.pageName, city: PAGE_CONFIG.city, campaign: PAGE_CONFIG.campaign,
+        page_url: PAGE_CONFIG.pageUrl, referrer: document.referrer || 'direct',
+        submitted_at: new Date().toISOString(),
+        device_type: (window.innerWidth < 768 ? 'mobile' : window.innerWidth < 1024 ? 'tablet' : 'desktop'),
+        landing_page: PAGE_CONFIG.pageUrl,
+        first_referrer: document.referrer || 'direct'
+      }, window.LUUP_ATTRIBUTION || {}, this.state.utm))
+    })
+      .then((res) => { if (!res.ok) throw new Error('submit_failed'); })
+      .then(() => {
+        this.setState({ status: 'success' });
+        trackEvent('invite_form_success', { page_name: PAGE_CONFIG.pageName, city: PAGE_CONFIG.city, campaign: PAGE_CONFIG.campaign });
+        if (typeof window.luupTrack !== 'function') {
+          try { if (typeof window.fbq === 'function') window.fbq('track', 'Lead', { city: PAGE_CONFIG.city }); } catch (e) {}
+        }
+      })
+      .catch((err) => {
+        this.setState({ status: 'error' });
+        trackEvent('invite_form_error', { page_name: PAGE_CONFIG.pageName, reason: (err && err.message) || 'unknown' });
+      });
+  };
+
+  renderVals() {
+    const s = this.state;
+    const err = '#B3261E';
+    const ok = '#3A3A3A';
+    const blocked = s.status === 'submitting' || Object.keys(this.validate()).length > 0;
+    const compact = s.compact;
+    return {
+      rootStyle: 'display:flex;flex-direction:column;',
+      heroSecStyle: compact
+        ? 'position:relative;background:#232323;display:block;'
+        : 'position:relative;background:#0B0B0B;overflow:hidden;display:flex;align-items:flex-end;min-height:clamp(380px,56vw,660px);',
+      heroMediaStyle: compact
+        ? 'position:relative;width:100%;line-height:0;'
+        : 'position:absolute;inset:0;z-index:0;',
+      heroImgStyle: compact
+        ? 'width:100%;height:auto;display:block;'
+        : 'width:100%;height:100%;object-fit:cover;display:block;object-position:72% 50%;',
+      heroOverlayA: compact ? 'display:none;' : 'position:absolute;inset:0;background:linear-gradient(100deg, rgba(35,35,35,0.92) 0%, rgba(35,35,35,0.8) 34%, rgba(35,35,35,0.38) 60%, rgba(35,35,35,0.14) 100%);',
+      heroOverlayB: compact ? 'display:none;' : 'position:absolute;inset:0;background:linear-gradient(0deg, rgba(35,35,35,0.78) 0%, rgba(35,35,35,0) 46%);',
+      heroCopyStyle: compact
+        ? 'position:relative;z-index:1;width:100%;background:#232323;padding:clamp(28px,7vw,40px) clamp(20px,5vw,64px) clamp(32px,7vw,44px);'
+        : 'position:relative;z-index:1;width:100%;max-width:1240px;margin:0 auto;padding:clamp(56px,9vw,120px) clamp(20px,5vw,64px) clamp(40px,6vw,72px);',
+      navDisplay: compact ? 'none' : 'flex',
+      burgerDisplay: compact ? 'flex' : 'none',
+      menuOpen: !!s.menuOpen,
+      menuGlyph: s.menuOpen ? '\u2715' : '\u2630',
+      menuPanelStyle: (compact && s.menuOpen)
+        ? 'display:flex;flex-direction:column;gap:2px;padding:8px clamp(20px,5vw,64px) 18px;border-top:1px solid #2C2C2C;background:#0B0B0B;'
+        : 'display:none;',
+      toggleMenu: () => this.setState((st) => ({ menuOpen: !st.menuOpen })),
+      onMenuAbout: () => { this.setState({ menuOpen: false }); trackEvent('about_luup_click', { page_name: PAGE_CONFIG.pageName, campaign: PAGE_CONFIG.campaign }); },
+      onMenuHow: () => this.setState({ menuOpen: false }),
+      onMenuCta: () => { this.setState({ menuOpen: false }); this.scrollToSignup('mobile_menu'); },
+      ordHeader: compact ? 0 : 0,
+      ordHero: compact ? 1 : 0,
+      ordForm: compact ? 3 : 0,
+      ordWhy: compact ? 2 : 0,
+      ordHow: compact ? 4 : 0,
+      ordFooter: compact ? 5 : 0,
+      bandStyle: compact
+        ? 'display:contents;'
+        : 'background:#232323;display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,0.9fr);gap:clamp(36px,5vw,64px);align-items:start;padding:clamp(52px,7vw,96px) max(clamp(20px,5vw,64px), calc((100% - 1240px) / 2));',
+      whySecStyle: compact
+        ? 'order:2;background:#232323;padding:clamp(40px,8vw,56px) clamp(20px,5vw,64px);min-width:0;'
+        : 'min-width:0;',
+      formSecStyle: compact
+        ? 'order:3;background:#232323;padding:clamp(26px,6vw,36px) clamp(20px,5vw,64px);min-width:0;'
+        : 'min-width:0;',
+      benefits: BENEFITS.map((b) => ({ title: b.title, body: b.body, body2: b.body2 || '', hasBody2: !!b.body2, iconEl: makeIcon(b.icon, 24) })),
+      steps: STEPS,
+      footerLinks: FOOTER_LINKS,
+      socials: SOCIALS.map((soc) => Object.assign({}, soc, { iconEl: makeIcon(soc.icon, 20) })),
+
+      onAppStoreClick: () => trackEvent('app_store_click', { store: 'app_store', page_name: PAGE_CONFIG.pageName, campaign: PAGE_CONFIG.campaign }),
+      onGooglePlayClick: () => trackEvent('app_store_click', { store: 'google_play', page_name: PAGE_CONFIG.pageName, campaign: PAGE_CONFIG.campaign }),
+      onHeroCta: () => this.scrollToSignup('hero'),
+      onAboutLuupClick: () => trackEvent('about_luup_click', { page_name: PAGE_CONFIG.pageName, campaign: PAGE_CONFIG.campaign }),
+      aboutModalOpen: !!s.aboutModalOpen,
+      stopPropagation: (e) => e.stopPropagation(),
+      onAboutModalOpen: () => { trackEvent('about_luup_click', { page_name: PAGE_CONFIG.pageName, campaign: PAGE_CONFIG.campaign }); this.setState({ aboutModalOpen: true }); },
+      onAboutModalClose: () => this.setState({ aboutModalOpen: false }),
+      onHeaderCta: () => this.scrollToSignup('header'),
+      onHowCta: () => this.scrollToSignup('how_to_earn'),
+
+      formName: s.form.name,
+      formEmail: s.form.email,
+      formPhone: s.form.phone,
+      errors: s.errors,
+      nameInvalid: !!s.errors.name,
+      emailInvalid: !!s.errors.email,
+      phoneInvalid: !!s.errors.phone,
+      nameBorder: s.errors.name ? err : ok,
+      emailBorder: s.errors.email ? err : ok,
+      phoneBorder: s.errors.phone ? err : ok,
+      onNameChange: (e) => this.handleField('name', e.target.value),
+      onEmailChange: (e) => this.handleField('email', e.target.value),
+      onPhoneChange: (e) => this.handleField('phone', e.target.value),
+      onSubmit: this.handleSubmit,
+      submitting: blocked,
+      submitBg: blocked ? '#5C5C5C' : '#FF6A3D',
+      submitColor: blocked ? '#FFFFFF' : '#0B0B0B',
+      submitCursor: blocked ? 'not-allowed' : 'pointer',
+      submitLabel: s.status === 'submitting' ? 'Sending\u2026' : "I'm Interested",
+      formStatusError: s.status === 'error',
+      formSuccess: s.status === 'success',
+      formNotSuccess: s.status !== 'success'
+    };
+  }
+}
+
+</script>
+</body>
+</html>

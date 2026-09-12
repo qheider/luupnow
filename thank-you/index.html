@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="../support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Thank you — LUUP</title>
+  <meta name="description" content="Thanks for signing up. We'll be in touch about your invite." />
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="facebook-domain-verification" content="9fet6vb4tbm9g9sc4lm9bou29tb133" />
+  <!-- LUUP analytics: GA4 + Google Ads + Meta Pixel + Mixpanel + UTM capture.
+       All IDs live in ../analytics.js — edit there, not here. Fires only on luupnow.ca. -->
+  <script src="../analytics.js"></script>
+  <link rel="icon" href="../assets/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Roboto:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    body { margin: 0; font-family: 'Roboto', -apple-system, BlinkMacSystemFont, sans-serif; -webkit-font-smoothing: antialiased; background: #0B0B0B; }
+    a { color: #FF6A3D; }
+    a:hover { color: #E2542B; }
+    *:focus-visible { outline: 2px solid #FF6A3D !important; outline-offset: 2px; }
+  </style>
+</helmet>
+<div style="min-height:100vh;background:#0B0B0B;display:flex;flex-direction:column;">
+  <header style="padding:18px clamp(20px,5vw,64px);border-bottom:1px solid #232323;display:flex;flex-wrap:wrap;gap:14px;align-items:center;justify-content:space-between;">
+    <a href="{{homeHref}}" style="display:inline-block;"><img src="../assets/luup-logo-white.png" alt="Luup" style="height:30px;width:auto;display:block;" /></a>
+    <a href="{{homeHref}}" style="display:inline-flex;align-items:center;gap:9px;background:#FF6A3D;color:#0B0B0B;text-decoration:none;padding:12px 20px;border-radius:999px;font-size:15px;font-weight:700;font-family:'Plus Jakarta Sans',sans-serif;min-height:44px;box-sizing:border-box;" style-hover="background:#E2542B;">← {{backLabel}}</a>
+  </header>
+
+  <main style="flex:1;display:flex;align-items:center;justify-content:center;padding:clamp(40px,8vw,88px) clamp(20px,5vw,64px);">
+    <div style="width:100%;max-width:920px;display:grid;grid-template-columns:{{gridColumns}};gap:clamp(28px,5vw,56px);align-items:start;">
+
+      <div style="min-width:0;">
+        <span style="display:inline-flex;align-items:center;gap:10px;background:rgba(255,106,61,0.12);border:1px solid rgba(255,106,61,0.4);color:#FF6A3D;border-radius:999px;padding:7px 16px;font-size:13px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;font-family:'Plus Jakarta Sans',sans-serif;">{{eyebrow}}</span>
+        <h1 style="margin:20px 0 14px;font-family:'Plus Jakarta Sans',sans-serif;font-size:clamp(32px,5vw,46px);line-height:1.1;font-weight:800;color:#FFFFFF;text-wrap:pretty;">{{headline}}</h1>
+        <p style="margin:0 0 30px;font-size:18px;line-height:1.55;color:#C9C9C9;max-width:46ch;text-wrap:pretty;">{{subhead}}</p>
+
+        <h2 style="margin:0 0 16px;font-family:'Plus Jakarta Sans',sans-serif;font-size:15px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#8C8C8C;">What happens next</h2>
+        <ol style="margin:0 0 32px;padding:0;list-style:none;display:flex;flex-direction:column;gap:16px;">
+          <sc-for list="{{steps}}" as="step" hint-placeholder-count="3">
+            <li style="display:flex;gap:14px;align-items:flex-start;">
+              <span style="flex:none;width:28px;height:28px;border-radius:999px;background:#FF6A3D;color:#0B0B0B;font-weight:800;font-size:14px;font-family:'Plus Jakarta Sans',sans-serif;display:flex;align-items:center;justify-content:center;">{{step.n}}</span>
+              <div style="min-width:0;">
+                <p style="margin:0 0 3px;font-size:16px;font-weight:700;color:#FFFFFF;font-family:'Plus Jakarta Sans',sans-serif;">{{step.title}}</p>
+                <p style="margin:0;font-size:15px;line-height:1.5;color:#A8A8A8;text-wrap:pretty;"><strong style="color:#FF6A3D;font-weight:700;">{{step.strong}}</strong>{{step.body}}<strong style="color:#FF6A3D;font-weight:700;">{{step.strong2}}</strong>{{step.body2}}</p>
+              </div>
+            </li>
+          </sc-for>
+        </ol>
+
+      </div>
+
+      <div style="min-width:0;background:#161616;border:1px solid #2A2A2A;border-radius:16px;padding:clamp(22px,3vw,30px);">
+        <h2 style="margin:0 0 6px;font-family:'Plus Jakarta Sans',sans-serif;font-size:20px;font-weight:800;color:#FFFFFF;">Get the Luup app</h2>
+        <p style="margin:0 0 20px;font-size:14px;line-height:1.5;color:#A8A8A8;">Scan the QR code or pick your store below.</p>
+        <div style="display:flex;justify-content:center;margin-bottom:20px;">
+          <img src="../assets/luup-qr.png" alt="QR code to download the Luup app" style="width:170px;height:170px;background:#FFFFFF;border-radius:12px;padding:10px;display:block;" />
+        </div>
+        <div style="display:flex;flex-direction:column;gap:10px;">
+          <a href="https://apps.apple.com/us/app/luup-car-sharing-nearby/id1571154008" onClick="{{onAppStoreClick}}" style="background:#FF6A3D;color:#0B0B0B;text-decoration:none;text-align:center;padding:13px 18px;border-radius:10px;font-size:15px;font-weight:700;font-family:'Plus Jakarta Sans',sans-serif;">Download on the App Store</a>
+          <a href="https://play.google.com/store/apps/details?id=com.ridealike.app" onClick="{{onGooglePlayClick}}" style="background:transparent;color:#FFFFFF;border:1.5px solid #4A4A4A;text-decoration:none;text-align:center;padding:13px 18px;border-radius:10px;font-size:15px;font-weight:700;font-family:'Plus Jakarta Sans',sans-serif;">Get it on Google Play</a>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer style="padding:24px clamp(20px,5vw,64px);border-top:1px solid #232323;display:flex;flex-wrap:wrap;gap:12px 24px;align-items:center;justify-content:space-between;">
+    <p style="margin:0;font-size:13px;color:#7A7A7A;">Luup Technologies Corp. · 21 Braid St, New Westminster, BC V3L 3P4</p>
+    <a href="mailto:hey@luupnow.com" style="font-size:13px;color:#FF6A3D;text-decoration:none;font-weight:700;">hey@luupnow.com</a>
+  </footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+const COPY = {
+  renters: {
+    eyebrow: "You're on the list",
+    headline: 'Thanks — your invite request is in.',
+    subhead: "We're reviewing sign-ups for Metro Vancouver and will email you when your invite is ready.",
+    backLabel: 'Back to Renters',
+    homeHref: '/renters/',
+    steps: [
+      { n: '1', title: 'Check your inbox', body: 'A confirmation email is on its way. Add ', strong2: 'hey@luupnow.com', body2: ' to your contacts so it does not land in spam.' },
+      { n: '2', title: 'We verify your profile', body: 'Identity and driving record screening happens before your first booking is approved.' },
+      { n: '3', title: 'Book your first car', body: 'Once your profile is approved you can browse cars near you and book straight from the app.' }
+    ]
+  },
+  connect: {
+    eyebrow: 'Application received',
+    headline: 'Thanks — your details are in.',
+    subhead: "We're reviewing sign-ups for Metro Vancouver and will email you with the next step.",
+    backLabel: 'Back to Connect',
+    homeHref: '/connect/',
+    steps: [
+      { n: '1', title: 'Check your inbox', body: 'A confirmation email is on its way. Add ', strong2: 'hey@luupnow.com', body2: ' to your contacts so it does not land in spam.' },
+      { n: '2', title: 'We review your application', body: 'Our team confirms your vehicle, your building and the plan that fits you.' },
+      { n: '3', title: 'Set your sharing window', body: 'You choose when your car is available, and we match it with verified members.' }
+    ]
+  },
+  autoshop: {
+    eyebrow: 'Application received',
+    headline: 'Thanks — we have your shop details.',
+    subhead: "Our partnerships team reviews new shops within two business days and will reach out to set up your referral link.",
+    backLabel: 'Back to Auto Shop',
+    homeHref: '/autoshop/',
+    steps: [
+      { n: '1', title: 'Check your inbox', body: 'A confirmation email is on its way. Add ', strong2: 'hey@luupnow.com', body2: ' to your contacts so it does not land in spam.' },
+      { n: '2', title: 'We call to confirm details', body: 'A short call to cover your location, volume and how referrals fit your service desk.' },
+      { n: '3', title: 'Start earning $25 per customer', body: 'You get a referral link and materials for your shop. $25 for every customer who joins and books.' }
+    ]
+  },
+  influencer: {
+    eyebrow: 'Application received',
+    headline: 'Thanks — you\'re on the list.',
+    subhead: "We're reviewing new Luup Influencers and will email you your link and next steps.",
+    backLabel: 'Back to Influencer',
+    homeHref: '/influencer/',
+    steps: [
+      { n: '1', title: 'Check your inbox', body: 'A confirmation email is on its way. Add ', strong2: 'hey@luupnow.com', body2: ' to your contacts so it does not land in spam.' },
+      { n: '2', title: 'We set up your link', body: 'Our team confirms your details and sends you a personal referral link to share.' },
+      { n: '3', title: 'Start earning', body: 'Share your link with the people around you and earn as they join and stay active.' }
+    ]
+  },
+  technology: {
+    eyebrow: 'Request received',
+    headline: 'Thanks — your request is in.',
+    subhead: "Our team will review your fleet details and get back to you with next steps.",
+    backLabel: 'Back to Technology',
+    homeHref: '/technology/',
+    steps: [
+      { n: '1', title: 'Check your inbox', body: 'A confirmation email is on its way. Add ', strong2: 'hey@luupnow.com', body2: ' to your contacts so it does not land in spam.' },
+      { n: '2', title: 'We review your fleet', body: 'We look at your vehicle count, locations and how the platform fits your operation.' },
+      { n: '3', title: 'Book a walkthrough', body: 'A short call to see live tracking, access control and utilization reporting.' }
+    ]
+  }
+};
+
+function trackEvent(eventName, properties) {
+  if (typeof window.luupTrack === 'function') { window.luupTrack(eventName, properties); return; }
+  const payload = Object.assign({}, properties || {}, { timestamp: new Date().toISOString() });
+  try { if (typeof window.gtag === 'function') window.gtag('event', eventName, payload); } catch (e) {}
+  try { if (typeof window.fbq === 'function') window.fbq('trackCustom', eventName, payload); } catch (e) {}
+  try { if (window.mixpanel && typeof window.mixpanel.track === 'function') window.mixpanel.track(eventName, payload); } catch (e) {}
+}
+
+class Component extends DCLogic {
+  state = { source: 'renters', compact: false };
+
+  componentDidMount() {
+    let source = 'renters';
+    try {
+      const p = new URLSearchParams(window.location.search).get('from');
+      if (p && COPY[p.toLowerCase()]) source = p.toLowerCase();
+    } catch (e) {}
+    this.setState({ source, compact: window.innerWidth < 860 });
+    this.onResize = () => this.setState({ compact: window.innerWidth < 860 });
+    window.addEventListener('resize', this.onResize);
+
+    trackEvent('thank_you_view', { page_name: 'thank_you', source: source });
+    // The conversion (Meta Lead + Google Ads) is fired once on the campaign page at
+    // form success. Firing it again here would double-count every submission.
+  }
+
+  componentWillUnmount() {
+    if (this.onResize) window.removeEventListener('resize', this.onResize);
+  }
+
+  renderVals() {
+    const c = COPY[this.state.source] || COPY.renters;
+    const track = (store, url) => (e) => {
+      trackEvent('app_store_click', { store: store, page_name: 'thank_you', source: this.state.source });
+    };
+    return {
+      eyebrow: c.eyebrow,
+      headline: c.headline,
+      subhead: c.subhead,
+      backLabel: c.backLabel,
+      // Same-directory-relative so it works on luupnow.ca and on hosts without a
+      // directory index (preview), and never depends on the site root.
+      homeHref: (function () {
+        var slug = c.homeHref.replace(/^\/|\/$/g, '');
+        return /\/index\.html$/i.test(location.pathname) ? '../' + slug + '/index.html' : '../' + slug + '/';
+      })(),
+      steps: c.steps,
+      gridColumns: this.state.compact ? '1fr' : 'minmax(0, 1.25fr) minmax(0, 0.85fr)',
+      onAppStoreClick: track('app_store'),
+      onGooglePlayClick: track('google_play')
+    };
+  }
+}
+</script>
+</body>
+</html>
