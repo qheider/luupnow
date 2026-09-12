@@ -9,7 +9,8 @@ The static marketing site for luupnow.ca — a car-sharing club. There is no bui
 ## Site map
 
 - `index.html` + `styles.css` — the luupnow.ca homepage. Plain hand-written HTML/CSS, no templating system.
-- `renters/`, `autoshop/`, `connect/`, `technology/`, `influencer/` — paid-traffic landing pages, each a self-contained `index.html` plus an `images/` folder for that page's hero/OG images.
+- `assets/` — shared images (logos, hero photos, QR code, ICBC mark, flag) used by the homepage and by `influencer/`, which has no `images/` folder of its own and references `../assets/` instead.
+- `renters/`, `autoshop/`, `connect/`, `technology/`, `influencer/` — paid-traffic landing pages, each a self-contained `index.html` plus (except `influencer/`) an `images/` folder for that page's hero/OG images.
 - `thank-you/index.html` — shared post-submit page for the five landing pages above.
 - `analytics.js` — single shared tracking loader, included by every page.
 - `support.js` — generated runtime (see below). **Never hand-edit** — it's built from `dc-runtime/src/*.ts` (not present in this repo) via `bun run build`; treat it as vendored.

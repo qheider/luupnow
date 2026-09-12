@@ -59,12 +59,14 @@
     <nav aria-label="Primary" style="display:{{navDisplay}};align-items:center;gap:clamp(16px,3vw,32px);flex-wrap:wrap;justify-content:flex-end;">
       <a href="https://luupnow.com/page/about-us" target="_blank" rel="noopener noreferrer" onClick="{{onAboutLuupClick}}" style="font-family:'Plus Jakarta Sans',sans-serif;font-size:14.5px;font-weight:600;color:#FFFFFF;text-decoration:none;" style-hover="color:#FF6A3D;">What is Luup</a>
       <a href="#how" style="font-family:'Plus Jakarta Sans',sans-serif;font-size:14.5px;font-weight:600;color:#FFFFFF;text-decoration:none;" style-hover="color:#FF6A3D;">How to earn</a>
+      <a href="#faq" style="font-family:'Plus Jakarta Sans',sans-serif;font-size:14.5px;font-weight:600;color:#FFFFFF;text-decoration:none;" style-hover="color:#FF6A3D;">Questions</a>
     </nav>
     <button type="button" aria-label="Menu" aria-expanded="{{menuOpen}}" onClick="{{toggleMenu}}" style="display:{{burgerDisplay}};background:none;border:1px solid rgba(255,255,255,0.4);border-radius:10px;width:44px;height:44px;align-items:center;justify-content:center;cursor:pointer;color:#FFFFFF;font-size:19px;line-height:1;">{{menuGlyph}}</button>
   </div>
   <div style="{{menuPanelStyle}}">
     <a href="https://luupnow.com/page/about-us" target="_blank" rel="noopener noreferrer" onClick="{{onMenuAbout}}" style="font-family:'Plus Jakarta Sans',sans-serif;font-size:16px;font-weight:600;color:#FFFFFF;text-decoration:none;padding:12px 0;min-height:44px;display:flex;align-items:center;">What is Luup</a>
     <a href="#how" onClick="{{onMenuHow}}" style="font-family:'Plus Jakarta Sans',sans-serif;font-size:16px;font-weight:600;color:#FFFFFF;text-decoration:none;padding:12px 0;min-height:44px;display:flex;align-items:center;">How to earn</a>
+    <a href="#faq" onClick="{{onMenuHow}}" style="font-family:'Plus Jakarta Sans',sans-serif;font-size:16px;font-weight:600;color:#FFFFFF;text-decoration:none;padding:12px 0;min-height:44px;display:flex;align-items:center;">Questions</a>
     <button type="button" onClick="{{onMenuCta}}" style="margin-top:10px;background:#FF6A3D;color:#0B0B0B;border:none;padding:15px 24px;border-radius:999px;font-size:16px;font-weight:800;font-family:'Plus Jakarta Sans',sans-serif;cursor:pointer;min-height:48px;width:100%;">I'm Interested</button>
   </div>
 </header>
@@ -89,14 +91,19 @@
     <img src="../assets/influencer-hero.jpg" alt="Three friends talking together beside a car on a neighbourhood street." fetchpriority="high" style="{{heroImgStyle}}" />
     <div style="{{heroOverlayA}}"></div>
     <div style="{{heroOverlayB}}"></div>
+    <sc-if value="{{compactHero}}" hint-placeholder-val="{{false}}">
+      <p style="position:absolute;top:14px;left:clamp(20px,5vw,64px);right:clamp(20px,5vw,64px);z-index:2;font-family:'Plus Jakarta Sans',sans-serif;font-size:12.5px;line-height:1.35;font-weight:700;letter-spacing:0.01em;color:#0B0B0B;margin:0;">Canadian Neighborhood<br />Car Sharing Club</p>
+    </sc-if>
   </div>
   <div style="{{heroCopyStyle}}">
-    <p style="font-family:'Plus Jakarta Sans',sans-serif;font-size:clamp(12px,1.2vw,15px);font-weight:600;letter-spacing:0.01em;color:#FFFFFF;margin:0 0 30px;max-width:min(100%,46vw);text-wrap:balance;">Canadian Neighborhood Car Sharing Club</p>
+    <sc-if value="{{wideHero}}" hint-placeholder-val="{{true}}">
+      <p style="font-family:'Plus Jakarta Sans',sans-serif;font-size:clamp(12px,1.2vw,15px);font-weight:600;letter-spacing:0.01em;color:#FFFFFF;margin:0 0 30px;max-width:min(100%,46vw);text-wrap:balance;">Canadian Neighborhood Car Sharing Club</p>
+    </sc-if>
     <h1 id="hero-heading" style="font-family:'Plus Jakarta Sans',sans-serif;font-size:clamp(44px,7.8vw,104px);line-height:0.96;font-weight:800;letter-spacing:-0.035em;color:#FFFFFF;margin:0 0 26px;text-wrap:balance;">Earn <span style="color:#FF6A3D;">$25</span> For<br />Every Referral</h1>
-    <p style="font-family:'Plus Jakarta Sans',sans-serif;font-size:clamp(24px,3.2vw,44px);line-height:1.15;font-weight:400;letter-spacing:-0.02em;color:#FFFFFF;margin:0 0 12px;max-width:min(100%,62vw);text-wrap:balance;">Become a <span style="color:#FF6A3D;">Luup</span> Influencer</p>
-    <div style="display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-top:26px;">
-      <button type="button" onClick="{{onHeroCta}}" style="background:#FF6A3D;color:#0B0B0B;border:none;padding:15px 52px;border-radius:999px;font-size:16px;font-weight:800;font-family:'Plus Jakarta Sans',sans-serif;cursor:pointer;min-height:50px;transition:transform .2s ease;" style-hover="transform:translateY(-1px);">I'm Interested</button>
-      <button type="button" onClick="{{onAboutModalOpen}}" style="background:transparent;color:#FFFFFF;border:1.5px solid rgba(255,255,255,0.55);padding:15px 28px;border-radius:999px;font-size:16px;font-weight:700;font-family:'Plus Jakarta Sans',sans-serif;min-height:50px;display:flex;align-items:center;cursor:pointer;transition:transform .2s ease;" style-hover="transform:translateY(-1px);border-color:#FFFFFF;">About Luup</button>
+    <p style="{{heroSubStyle}}">Become a <span style="color:#FF6A3D;">Luup</span> Influencer</p>
+    <div style="{{heroBtnRowStyle}}">
+      <button type="button" onClick="{{onHeroCta}}" style="{{heroBtnPrimaryStyle}}" style-hover="transform:translateY(-1px);">I'm Interested</button>
+      <button type="button" onClick="{{onAboutModalOpen}}" style="{{heroBtnSecondaryStyle}}" style-hover="transform:translateY(-1px);border-color:#FFFFFF;">About Luup</button>
     </div>
   </div>
 </section>
@@ -110,7 +117,7 @@
           <div style="display:grid;grid-template-columns:46px minmax(0,1fr);gap:18px;align-items:start;">
             <span style="width:46px;height:46px;flex:none;border-radius:14px;background:rgba(255,106,61,0.14);color:#FF6A3D;display:flex;align-items:center;justify-content:center;">{{b.iconEl}}</span>
             <div>
-              <h3 style="font-family:'Plus Jakarta Sans',sans-serif;font-size:19px;font-weight:800;color:#FFFFFF;margin:0 0 7px;line-height:1.25;">{{b.title}}</h3>
+              <h3 style="font-family:'Plus Jakarta Sans',sans-serif;font-size:19px;font-weight:800;color:#FFFFFF;margin:0 0 7px;line-height:1.25;">{{b.title}}<sc-if value="{{b.hasStar}}" hint-placeholder-val="{{false}}"><span style="color:#FF6A3D;font-size:14px;font-weight:800;vertical-align:super;line-height:0;margin-left:3px;">*</span></sc-if></h3>
               <p style="font-size:15px;line-height:1.65;color:#D8D8D8;margin:0;text-wrap:pretty;">{{b.body}}</p>
               <sc-if value="{{b.hasBody2}}" hint-placeholder-val="{{false}}">
                 <p style="font-size:15px;line-height:1.65;color:#D8D8D8;margin:10px 0 0;text-wrap:pretty;">{{b.body2}}</p>
@@ -169,8 +176,42 @@
         </div>
       </sc-for>
     </div>
-    <div style="margin-top:clamp(36px,5vw,56px);">
-      <button type="button" onClick="{{onHowCta}}" style="background:#FF6A3D;color:#FFFFFF;border:none;padding:17px 32px;border-radius:999px;font-size:16.5px;font-weight:800;font-family:'Plus Jakarta Sans',sans-serif;cursor:pointer;min-height:52px;transition:transform .2s ease;" style-hover="transform:translateY(-2px);">I'm Interested</button>
+  </div>
+</section>
+
+<section id="faq" style="order:{{ordFaq}};background:#F5F5F5;padding:clamp(56px,8vw,104px) 0;">
+  <div style="max-width:900px;margin:0 auto;padding:0 clamp(20px,5vw,64px);">
+    <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-size:clamp(28px,4vw,46px);line-height:1.1;font-weight:800;letter-spacing:-0.025em;color:#0B0B0B;margin:0 0 clamp(28px,3.5vw,44px);">Questions</h2>
+    <div style="border-top:1px solid #DDDDDD;">
+      <sc-for list="{{faqItems}}" as="item" hint-placeholder-count="6">
+        <div style="border-bottom:1px solid #DDDDDD;">
+          <h3 style="margin:0;">
+            <button type="button" id="{{item.buttonId}}" aria-expanded="{{item.isOpen}}" aria-controls="{{item.panelId}}" onClick="{{item.onToggle}}" style="width:100%;display:flex;align-items:center;justify-content:space-between;gap:16px;text-align:left;background:none;border:none;padding:20px 0;cursor:pointer;font-family:'Plus Jakarta Sans',sans-serif;font-size:17px;font-weight:700;line-height:1.35;color:#0B0B0B;min-height:56px;" style-hover="color:#FF6A3D;">
+              <span style="min-width:0;">{{item.q}}<sc-if value="{{item.hasStar}}" hint-placeholder-val="{{false}}"><span style="color:#FF6A3D;font-size:13px;font-weight:800;vertical-align:super;line-height:0;margin-left:3px;">*</span></sc-if></span>
+              <span style="flex:none;color:#FF6A3D;display:flex;transform:{{item.chevronTransform}};transition:transform .2s ease;">{{item.chevronEl}}</span>
+            </button>
+          </h3>
+          <sc-if value="{{item.isOpen}}" hint-placeholder-val="{{false}}">
+            <div id="{{item.panelId}}" role="region" aria-labelledby="{{item.buttonId}}" style="padding:0 0 22px;display:flex;flex-direction:column;gap:12px;max-width:70ch;">
+              <p style="margin:0;font-size:15.5px;line-height:1.7;color:#444444;text-wrap:pretty;">{{item.a}}</p>
+              <sc-if value="{{item.hasBullets}}" hint-placeholder-val="{{false}}">
+                <ul style="margin:0;padding-left:20px;display:flex;flex-direction:column;gap:7px;">
+                  <sc-for list="{{item.bullets}}" as="b" hint-placeholder-count="3">
+                    <li style="font-size:15.5px;line-height:1.6;color:#444444;text-wrap:pretty;">{{b.text}}</li>
+                  </sc-for>
+                </ul>
+              </sc-if>
+              <sc-if value="{{item.hasA2}}" hint-placeholder-val="{{false}}">
+                <p style="margin:0;font-size:15.5px;line-height:1.7;color:#444444;text-wrap:pretty;">{{item.a2}}</p>
+              </sc-if>
+            </div>
+          </sc-if>
+        </div>
+      </sc-for>
+    </div>
+    <p style="margin:clamp(28px,3.5vw,40px) 0 0;font-size:15.5px;line-height:1.7;color:#444444;">Still have questions? Contact the LUUP team at <a href="mailto:info@luupnow.com" style="color:#FF6A3D;font-weight:700;text-decoration:none;">info@luupnow.com</a></p>
+    <div style="margin-top:clamp(28px,4vw,44px);">
+      <button type="button" onClick="{{onFaqCta}}" style="background:#FF6A3D;color:#FFFFFF;border:none;padding:17px 32px;border-radius:999px;font-size:16.5px;font-weight:800;font-family:'Plus Jakarta Sans',sans-serif;cursor:pointer;min-height:52px;transition:transform .2s ease;" style-hover="transform:translateY(-2px);">I'm Interested</button>
     </div>
   </div>
 </section>
@@ -231,7 +272,8 @@ const ICON_PATHS = {
   linkedin: [['rect', { x: 3, y: 3, width: 18, height: 18, rx: 3 }], ['circle', { cx: 8, cy: 8.5, r: 1.2, fill: 'currentColor', stroke: 'none' }], ['path', { d: 'M8 11v7' }], ['path', { d: 'M12.5 18v-4c0-1.5 1-2.5 2.5-2.5S17 12.5 17 14v4' }], ['path', { d: 'M12.5 11v7' }]],
   x: [['path', { d: 'M4 4l16 16' }], ['path', { d: 'M20 4L4 20' }]],
   youtube: [['rect', { x: 2.5, y: 6, width: 19, height: 12, rx: 3 }], ['path', { d: 'M10.5 9.5v5l4.5-2.5-4.5-2.5z', fill: 'currentColor', stroke: 'none' }]],
-  tiktok: [['path', { d: 'M13.5 3v11.2a2.7 2.7 0 1 1-2.2-2.65' }], ['path', { d: 'M13.5 3c.3 2.2 2 3.9 4.2 4.2' }]]
+  tiktok: [['path', { d: 'M13.5 3v11.2a2.7 2.7 0 1 1-2.2-2.65' }], ['path', { d: 'M13.5 3c.3 2.2 2 3.9 4.2 4.2' }]],
+  'chevron-down': [['path', { d: 'M6 9l6 6 6-6' }]]
 };
 
 function makeIcon(name, size) {
@@ -249,7 +291,7 @@ function trackEvent(eventName, properties) {
 }
 
 const BENEFITS = [
-  { icon: 'repeat', title: 'Earn 1% From Your Referrals', body: 'We value the community and trust you bring to LUUP. Earn 1% of LUUP’s eligible revenue generated by the people you refer during their first 12 months on the platform.', body2: 'You’re rewarded not just for making an introduction, but for bringing active members into the LUUP community.' },
+  { icon: 'repeat', star: true, title: 'Earn 1% From Your Referrals', body: 'We value the community and trust you bring to LUUP. Earn 1% of LUUP’s eligible revenue generated by the people you refer during their first 12 months on the platform.', body2: 'You’re rewarded not just for making an introduction, but for bringing active members into the LUUP community.' },
   { icon: 'shield', title: 'We Do the Heavy Lifting', body: 'LUUP handles verification, insurance, bookings and payouts. You make the connection; we take care of the rest.' },
   { icon: 'people', title: 'Meet a Real Neighbourhood Need', body: 'Cars sit unused while neighbours need flexible access. Your reach helps bring them together.' }
 ];
@@ -258,6 +300,35 @@ const STEPS = [
   { n: '1', title: 'Share', body: 'Post your personal link and invite the people already around you — friends, neighbours, followers.' },
   { n: '2', title: 'Connect', body: 'They sign up, get verified, and start sharing or booking a car in your neighbourhood.' },
   { n: '3', title: 'Earn', body: 'You get paid on their activity, month after month, straight to your account.' }
+];
+
+const FAQ_ITEMS = [
+  { q: 'What is the LUUP Influencer Program?', a: 'The LUUP Influencer Program rewards you for introducing new vehicle owners and renters to the LUUP community. Share your unique referral link or QR code through your personal network, community, social media or local events.' },
+  { q: 'How do I get started?', a: 'Register as a LUUP Influencer. Once approved, you will receive a unique referral link and QR code that LUUP can use to track your eligible referrals.' },
+  { q: 'How do I earn the $25 renter referral reward?', a: 'Earn $25 when a new renter registers through your referral link, completes verification and completes a paid booking of at least three consecutive days by October 31, 2026. Cancelled, refunded, duplicate or self-referred bookings do not qualify. One reward is available per qualified new renter.' },
+  { q: 'What is considered a qualified vehicle listing?', a: 'A qualified listing must:', bullets: [
+    'Come from a new LUUP vehicle owner using your referral link or QR code',
+    'Include a vehicle that meets LUUP\u2019s eligibility requirements',
+    'Complete the required owner and vehicle verification',
+    'Be approved and activated by LUUP',
+    'Not be a duplicate, self-referral or previously registered account'
+  ] },
+  { q: 'When will I receive my reward?', a: 'Your reward becomes payable after LUUP confirms that the referral has met all qualification requirements. Approved rewards will be included in the next applicable payout cycle.' },
+  { q: 'Can I refer more than one vehicle owner?', a: 'Yes. You can earn a reward for every qualified new vehicle owner you refer. Unless otherwise stated, only one reward is available per new owner, regardless of how many vehicles that owner lists.' },
+  { q: 'Can I refer renters as well?', a: 'Yes. You may also refer new renters using your unique referral link. Any renter-specific reward will be based on the offer and qualification requirements displayed in your influencer account or on the current LUUP promotion page.' },
+  { q: 'How does the 1% revenue reward work?', star: true, a: 'Earn 1% of LUUP\u2019s revenue generated by your referrals for 12 months. To qualify, an influencer must refer:', bullets: [
+    'At least 10 approved and listed vehicles',
+    'At least 10 verified renters',
+    'Each referred renter must complete a booking of at least three consecutive days'
+  ], a2: 'Additional eligibility requirements and exclusions are outlined in the LUUP Influencer Program Terms and Conditions.' },
+  { q: 'How can I earn $500\u2013$2,000 through a building partnership?', a: 'Yes. If you introduce LUUP to an apartment or condominium building, property manager, business or community organization, you may qualify for a $500\u2013$2,000 partnership reward. The amount depends on the partnership\u2019s size, scope and value. Contact LUUP before making an introduction.' },
+  { q: 'How does LUUP track my referrals?', a: 'Referrals are tracked through your unique referral link or QR code. The new user must register through your link or code for the referral to be connected to your account. LUUP may not be able to credit referrals submitted without the correct tracking information.' },
+  { q: 'Can I refer myself or someone who already uses LUUP?', a: 'No. Self-referrals, duplicate accounts and existing or previously registered LUUP users are not eligible for referral rewards.' },
+  { q: 'Can a reward be cancelled or reversed?', a: 'LUUP may withhold or reverse a reward if a referral is duplicate, incomplete, fraudulent, misleading, cancelled or otherwise ineligible under the program terms. Rewards that have legitimately met all published requirements will be honoured.' },
+  { q: 'Do I need to disclose that I may earn a reward?', a: 'Yes. When promoting LUUP, clearly disclose your relationship with the company and that you may receive a referral reward. For example:', a2: '\u201CI may earn a referral reward when you join LUUP through my link.\u201D' },
+  { q: 'Am I responsible for taxes on my earnings?', a: 'Yes. Influencers are responsible for reporting their earnings and paying any applicable taxes. LUUP may request the information required to maintain payment records or issue applicable tax documents.' },
+  { q: 'Can LUUP change the program?', a: 'LUUP may update, suspend or end the Influencer Program by providing notice. Any changes will apply going forward and will not remove rewards that were properly earned under the terms in effect when the referral qualified.' },
+  { q: 'Where can I review the complete program terms?', a: 'The complete eligibility requirements, payment conditions and program rules are available in the LUUP Influencer Program Terms and Conditions.' }
 ];
 
 const FOOTER_LINKS = [
@@ -281,6 +352,7 @@ class Component extends DCLogic {
     form: { name: '', email: '', phone: '' },
     errors: {},
     status: 'idle',
+    openFaq: null,
     started: false,
     utm: {}
   };
@@ -328,6 +400,12 @@ class Component extends DCLogic {
     window.scrollTo({ top: el.getBoundingClientRect().top + window.scrollY - 24, behavior: reduce ? 'auto' : 'smooth' });
     const first = document.getElementById('inf-name');
     if (first) setTimeout(() => first.focus({ preventScroll: true }), reduce ? 0 : 500);
+  };
+
+  toggleFaq = (i) => {
+    const opening = this.state.openFaq !== i;
+    this.setState({ openFaq: opening ? i : null });
+    if (opening) trackEvent('faq_open', { question: FAQ_ITEMS[i].q, page_name: PAGE_CONFIG.pageName });
   };
 
   handleField = (field, value) => {
@@ -399,8 +477,22 @@ class Component extends DCLogic {
         : 'width:100%;height:100%;object-fit:cover;display:block;object-position:72% 50%;',
       heroOverlayA: compact ? 'display:none;' : 'position:absolute;inset:0;background:linear-gradient(100deg, rgba(35,35,35,0.92) 0%, rgba(35,35,35,0.8) 34%, rgba(35,35,35,0.38) 60%, rgba(35,35,35,0.14) 100%);',
       heroOverlayB: compact ? 'display:none;' : 'position:absolute;inset:0;background:linear-gradient(0deg, rgba(35,35,35,0.78) 0%, rgba(35,35,35,0) 46%);',
+      compactHero: compact,
+      wideHero: !compact,
+      heroSubStyle: compact
+        ? "font-family:'Plus Jakarta Sans',sans-serif;font-size:clamp(18px,5.4vw,26px);line-height:1.2;font-weight:400;letter-spacing:-0.02em;color:#FFFFFF;margin:0 0 12px;white-space:nowrap;"
+        : "font-family:'Plus Jakarta Sans',sans-serif;font-size:clamp(24px,3.2vw,44px);line-height:1.15;font-weight:400;letter-spacing:-0.02em;color:#FFFFFF;margin:0 0 12px;max-width:min(100%,62vw);text-wrap:balance;",
+      heroBtnRowStyle: compact
+        ? 'display:grid;grid-template-columns:1fr 1fr;gap:12px;align-items:stretch;margin-top:22px;'
+        : 'display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-top:26px;',
+      heroBtnPrimaryStyle: compact
+        ? "background:#FF6A3D;color:#0B0B0B;border:1.5px solid #FF6A3D;padding:15px 12px;border-radius:999px;font-size:15px;font-weight:800;font-family:'Plus Jakarta Sans',sans-serif;cursor:pointer;min-height:50px;width:100%;display:flex;align-items:center;justify-content:center;transition:transform .2s ease;"
+        : "background:#FF6A3D;color:#0B0B0B;border:none;padding:15px 52px;border-radius:999px;font-size:16px;font-weight:800;font-family:'Plus Jakarta Sans',sans-serif;cursor:pointer;min-height:50px;transition:transform .2s ease;",
+      heroBtnSecondaryStyle: compact
+        ? "background:transparent;color:#FFFFFF;border:1.5px solid rgba(255,255,255,0.55);padding:15px 12px;border-radius:999px;font-size:15px;font-weight:800;font-family:'Plus Jakarta Sans',sans-serif;cursor:pointer;min-height:50px;width:100%;display:flex;align-items:center;justify-content:center;transition:transform .2s ease;"
+        : "background:transparent;color:#FFFFFF;border:1.5px solid rgba(255,255,255,0.55);padding:15px 28px;border-radius:999px;font-size:16px;font-weight:700;font-family:'Plus Jakarta Sans',sans-serif;min-height:50px;display:flex;align-items:center;cursor:pointer;transition:transform .2s ease;",
       heroCopyStyle: compact
-        ? 'position:relative;z-index:1;width:100%;background:#232323;padding:clamp(28px,7vw,40px) clamp(20px,5vw,64px) clamp(32px,7vw,44px);'
+        ? 'position:relative;z-index:1;width:100%;background:#232323;padding:16px clamp(20px,5vw,64px) clamp(32px,7vw,44px);'
         : 'position:relative;z-index:1;width:100%;max-width:1240px;margin:0 auto;padding:clamp(56px,9vw,120px) clamp(20px,5vw,64px) clamp(40px,6vw,72px);',
       navDisplay: compact ? 'none' : 'flex',
       burgerDisplay: compact ? 'flex' : 'none',
@@ -418,7 +510,23 @@ class Component extends DCLogic {
       ordForm: compact ? 3 : 0,
       ordWhy: compact ? 2 : 0,
       ordHow: compact ? 4 : 0,
-      ordFooter: compact ? 5 : 0,
+      ordFaq: compact ? 5 : 0,
+      ordFooter: compact ? 6 : 0,
+      faqItems: FAQ_ITEMS.map((it, i) => ({
+        q: it.q,
+        a: it.a,
+        bullets: (it.bullets || []).map((t) => ({ text: t })),
+        hasBullets: !!(it.bullets && it.bullets.length),
+        a2: it.a2 || '',
+        hasA2: !!it.a2,
+        hasStar: !!it.star,
+        isOpen: s.openFaq === i,
+        buttonId: 'faq-btn-' + i,
+        panelId: 'faq-panel-' + i,
+        onToggle: () => this.toggleFaq(i),
+        chevronTransform: s.openFaq === i ? 'rotate(180deg)' : 'rotate(0deg)',
+        chevronEl: makeIcon('chevron-down', 20)
+      })),
       bandStyle: compact
         ? 'display:contents;'
         : 'background:#232323;display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,0.9fr);gap:clamp(36px,5vw,64px);align-items:start;padding:clamp(52px,7vw,96px) max(clamp(20px,5vw,64px), calc((100% - 1240px) / 2));',
@@ -428,7 +536,7 @@ class Component extends DCLogic {
       formSecStyle: compact
         ? 'order:3;background:#232323;padding:clamp(26px,6vw,36px) clamp(20px,5vw,64px);min-width:0;'
         : 'min-width:0;',
-      benefits: BENEFITS.map((b) => ({ title: b.title, body: b.body, body2: b.body2 || '', hasBody2: !!b.body2, iconEl: makeIcon(b.icon, 24) })),
+      benefits: BENEFITS.map((b) => ({ title: b.title, body: b.body, body2: b.body2 || '', hasBody2: !!b.body2, hasStar: !!b.star, iconEl: makeIcon(b.icon, 24) })),
       steps: STEPS,
       footerLinks: FOOTER_LINKS,
       socials: SOCIALS.map((soc) => Object.assign({}, soc, { iconEl: makeIcon(soc.icon, 20) })),
@@ -443,6 +551,7 @@ class Component extends DCLogic {
       onAboutModalClose: () => this.setState({ aboutModalOpen: false }),
       onHeaderCta: () => this.scrollToSignup('header'),
       onHowCta: () => this.scrollToSignup('how_to_earn'),
+      onFaqCta: () => this.scrollToSignup('faq'),
 
       formName: s.form.name,
       formEmail: s.form.email,

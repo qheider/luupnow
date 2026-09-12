@@ -1,5 +1,5 @@
 LUUP — luupnow.ca upload package
-Generated: 2026-09-11 (rev 4)
+Generated: 2026-09-11 (rev 5)
 
 
 ==========================================================
@@ -27,8 +27,28 @@ Upload the CONTENTS of this folder into your GoDaddy web root
 
 
 ==========================================================
-2. WHAT CHANGED IN THIS BUILD (rev 4 — 2026-09-11)
+2. WHAT CHANGED IN THIS BUILD (rev 5 — 2026-09-11)
 ==========================================================
+  INFLUENCER  New "Questions" FAQ section (accordion, 16 items) added
+              below "How to earn"; "Questions" link added to the desktop
+              nav and the mobile menu; the "I'm Interested" button moved
+              from "How to earn" to the bottom of the FAQ section.
+              Contact line: info@luupnow.com.
+  INFLUENCER  FAQ copy: $15 vehicle-owner reward questions replaced with
+              the $25 renter referral reward (qualifying booking of 3+
+              consecutive days, by Oct 31 2026); building-partnership
+              question retitled to "How can I earn $500–$2,000 through a
+              building partnership?".
+  INFLUENCER  Orange asterisk marker on "Earn 1% From Your Referrals" and
+              on the matching 1% revenue FAQ question.
+  INFLUENCER  Mobile hero only: eyebrow moved onto the hero image (two
+              lines, black), tighter gap between image and headline,
+              "Become a Luup Influencer" kept on one line, and the two
+              hero buttons made equal width.
+
+----------------------------------------------------------
+  PREVIOUS BUILD (rev 4 — 2026-09-11)
+----------------------------------------------------------
   SOCIAL      Footer social links updated on every page:
               instagram.com/luup.now  ·  facebook.com/LuupNow
               x.com/LuupNow  ·  linkedin.com/company/luuptechnologies
