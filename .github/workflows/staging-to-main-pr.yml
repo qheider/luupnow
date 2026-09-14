@@ -47,6 +47,17 @@ jobs:
               return;
             }
 
+            const { data: comparison } = await github.rest.repos.compareCommitsWithBasehead({
+              owner,
+              repo,
+              basehead: `${base}...${head}`
+            });
+
+            if (comparison.ahead_by <= 0) {
+              core.info(`No commits to merge from ${head} into ${base}; skipping PR creation.`);
+              return;
+            }
+
             const { data: pr } = await github.rest.pulls.create({
               owner,
               repo,
