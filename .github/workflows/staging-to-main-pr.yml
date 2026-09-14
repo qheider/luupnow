@@ -58,13 +58,21 @@ jobs:
               return;
             }
 
-            const { data: pr } = await github.rest.pulls.create({
-              owner,
-              repo,
-              title: "Sync staging into main",
-              head,
-              base,
-              body: "Auto-created after new commits were pushed to `staging`."
-            });
+            try {
+              const { data: pr } = await github.rest.pulls.create({
+                owner,
+                repo,
+                title: "Sync staging into main",
+                head,
+                base,
+                body: "Auto-created after new commits were pushed to `staging`."
+              });
 
-            core.info(`Created PR #${pr.number}`);
+              core.info(`Created PR #${pr.number}`);
+            } catch (error) {
+              if (error.status === 403 && error.response?.data?.message?.includes("not permitted to create or approve pull requests")) {
+                core.warning("Repository settings currently prevent GitHub Actions from creating PRs. Skipping without failing the workflow.");
+                return;
+              }
+              throw error;
+            }
