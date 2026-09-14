@@ -1,258 +1,111 @@
-LUUP — luupnow.ca upload package
-Generated: 2026-09-11 (rev 5)
-
+LUUP — luupnow.ca FULL SITE upload package
+Generated: 2026-09-13 (rev 7 — complete package)
 
 ==========================================================
 1. WHAT TO UPLOAD
 ==========================================================
-Upload the CONTENTS of this folder into your GoDaddy web root
-(public_html / httpdocs). Keep the folder structure exactly as-is.
+Upload the CONTENTS of this folder into public_html/, keeping the
+folder structure exactly as-is. Overwrite when prompted.
 
-  index.html                  luupnow.ca homepage (Create Profile + Sign In)
-  styles.css                  homepage styles (incl. mobile hero layout)
-  analytics.js                *** ALL TRACKING IDs LIVE HERE *** (see section 3)
-  support.js                  shared runtime — required by all landing pages
-  .htaccess                   directory index + 301s:
-                              /auto-shop -> /autoshop, /fintech -> /connect
-  9fet6...html                Facebook domain verification file (backup method)
-  assets/                     shared logos, hero photos, QR, ICBC mark, flag
+  index.html                 -> public_html/index.html            (home / hub)
+  renters/index.html         -> public_html/renters/
+  autoshop/index.html        -> public_html/autoshop/
+  connect/index.html         -> public_html/connect/
+  technology/index.html      -> public_html/technology/
+  influencer/index.html      -> public_html/influencer/           (UPDATED)
+  thank-you/index.html       -> public_html/thank-you/
+  support.js                 -> public_html/support.js            (required)
+  analytics.js               -> public_html/analytics.js          (required)
+  styles.css                 -> public_html/styles.css
+  assets/                    -> public_html/assets/               (all images)
+  .htaccess                  -> public_html/.htaccess
+  9fet6vb4tbm9g9sc4lm9bou29tb133.html -> public_html/  (Meta domain verification)
 
-  renters/index.html          luupnow.ca/renters
-  autoshop/index.html         luupnow.ca/autoshop
-  connect/index.html          luupnow.ca/connect        (LUUP Connect)
-  technology/index.html       luupnow.ca/technology     (Dual-Use Technology)
-  influencer/index.html       luupnow.ca/influencer     (Influencer Program)
-  thank-you/index.html        luupnow.ca/thank-you
-  <page>/images/              that page's hero + OG share image
-
+IMPORTANT: support.js and analytics.js must sit at the ROOT of
+public_html/. Every page in a subfolder loads ../support.js and
+../analytics.js. If support.js is missing, pages render their raw
+template (for example, the "About Luup" panel appears already open).
 
 ==========================================================
-2. WHAT CHANGED IN THIS BUILD (rev 5 — 2026-09-11)
+2. WHAT CHANGED IN THIS BUILD (rev 7 — 2026-09-13)
 ==========================================================
-  INFLUENCER  New "Questions" FAQ section (accordion, 16 items) added
-              below "How to earn"; "Questions" link added to the desktop
-              nav and the mobile menu; the "I'm Interested" button moved
-              from "How to earn" to the bottom of the FAQ section.
-              Contact line: info@luupnow.com.
-  INFLUENCER  FAQ copy: $15 vehicle-owner reward questions replaced with
-              the $25 renter referral reward (qualifying booking of 3+
-              consecutive days, by Oct 31 2026); building-partnership
-              question retitled to "How can I earn $500–$2,000 through a
-              building partnership?".
-  INFLUENCER  Orange asterisk marker on "Earn 1% From Your Referrals" and
-              on the matching 1% revenue FAQ question.
+  INFLUENCER  "Questions" FAQ rewritten and condensed to 7 questions:
+                1. What is the LUUP Influencer Program, and how do I get started?
+                2. How can I earn $25 + 1% from renter referrals?   (asterisk)
+                3. How do I earn $15 per car?
+                4. How can I earn $500-$2,000 through a building partnership?
+                5. How are my referrals tracked, and when will I get paid?
+                6. Which referrals do not qualify?
+                7. What other program rules should I know?
+  INFLUENCER  Contact line: Questions? Contact hey@luupnow.com.
+  INFLUENCER  "Questions" link in the desktop nav and the mobile menu;
+              "I'm Interested" button sits at the bottom of the FAQ.
+  INFLUENCER  Orange asterisk on "Earn 1% From Your Referrals" and on the
+              matching $25 + 1% FAQ question.
   INFLUENCER  Mobile hero only: eyebrow moved onto the hero image (two
-              lines, black), tighter gap between image and headline,
-              "Become a Luup Influencer" kept on one line, and the two
-              hero buttons made equal width.
+              lines, black), tighter gap above the headline, "Become a
+              Luup Influencer" on one line, two equal-width buttons.
+  TRACKING    On form success the influencer page now also calls
+              window.luupIdentify(email, {...}).
 
-----------------------------------------------------------
-  PREVIOUS BUILD (rev 4 — 2026-09-11)
-----------------------------------------------------------
-  SOCIAL      Footer social links updated on every page:
-              instagram.com/luup.now  ·  facebook.com/LuupNow
-              x.com/LuupNow  ·  linkedin.com/company/luuptechnologies
-              youtube.com/@luupnowtech  ·  tiktok.com/@luup.now
-
-  FORMS       Email and mobile/phone now sit side by side in one row
-              on every page — both the in-page form and the popup form.
-
-  CONNECT     Every primary "Sign up for LUUP" CTA (header, hero,
-              how-it-works, model section, final CTA) now opens a popup
-              with luupnow.com/authentication loaded inside it, with an
-              "Open in new tab" link in the popup header. The invite
-              form itself is unchanged. The "Sign up for more
-              information" button in the financial-model section still
-              opens the original invite form modal, tagged with the
-              Connect campaign.
-
-  TECHNOLOGY  "Book a Call" and "Platform Capabilities" buttons removed
-              from the hero only. The same CTAs elsewhere on the page
-              (header, model section, capabilities, final CTA) stay.
-
-  INFLUENCER  "Why Become a LUUP Influencer?" section rewritten:
-              Earn 1% From Your Referrals / We Do the Heavy Lifting /
-              Meet a Real Neighbourhood Need.
-              "About Luup" in the hero now opens a popup with
-              luupnow.com/page/about-us instead of leaving the page.
-              One "I'm Interested" CTA added inside the mobile hamburger
-              menu (mobile only — desktop nav unchanged).
-
+  All other pages are unchanged from the previous build.
 
 ==========================================================
-2b. EARLIER BUILD (rev 2)
+3. TRACKING — CHECKED PAGE BY PAGE IN THIS BUILD
 ==========================================================
-  HOMEPAGE    Hero headline is now "Life Moves Better / with LUUP".
-              New subhead: "LUUP is a neighbourhood car-sharing club
-              connecting you with trusted people and vehicles nearby,
-              so you can access a car whenever life calls for one."
-              ("neighbourhood car-sharing club" bold, rest regular.)
-              Requires the updated styles.css — upload both together.
+  page              analytics.js  UTM capture  Meta Pixel  form endpoint
+  ----------------------------------------------------------------------
+  index.html            yes         yes (*)       yes         -
+  renters/              yes         yes           yes        Formspree
+  autoshop/             yes         yes           yes        Formspree
+  connect/              yes         yes           yes        Formspree
+  technology/           yes         yes           yes        Formspree
+  influencer/           yes         yes           yes        Formspree
+  thank-you/            yes         yes (*)       yes         -
 
-  NEW PAGE    /influencer/ — Influencer Program landing page.
-              Hero: "Earn $25 For Every Referral", "I'm Interested"
-              primary CTA and an "About Luup" secondary link to
-              luupnow.com/page/about-us. Name / email / phone form on a
-              black card; on success an orange confirmation appears
-              in place of the form (no redirect to /thank-you/).
-              iOS + Android app links added to the footer.
-              Uses the shared ../assets/ images — no images/ folder.
+  (*) These two pages have no form of their own; UTM and click IDs are
+      still captured for them by analytics.js and carried in the session.
 
-  TECHNOLOGY  "Who It Serves" copy updated: Cities & Municipalities,
-              Large Private Fleets, Transit Agencies.
+  IDs (all in the LUUP_IDS block at the top of analytics.js):
+    GA4               G-5RV23C0JFY          active
+    Meta Pixel        3079517958908951      active (PageView + Lead)
+    Meta domain verif 9fet6vb4tbm9g9sc4lm9bou29tb133  — meta tag on every
+                      page + the verification .html file at the root
+    Google Ads        blank  — paste 'AW-...' and the conversion label
+    Mixpanel          blank  — paste the project token
+    LinkedIn          blank
+    TikTok            blank
+  Nothing fires off luupnow.ca, so previews and staging stay clean.
 
-  NEW PAGE    /technology/ — Dual-Use Technology landing page.
-              Hero shows a laptop on an office desk with the animated
-              mobility platform running inside the screen. "Submit a
-              Request" form replaces the book-a-call CTA and tags every
-              submission with campaign "Technology".
-              OG/Twitter share card at technology/images/og-share.png (600x600).
-
-  CTAs        Every "Book a call" button on /technology/ now opens the
-              Submit a Request modal instead of Calendly, so the hero and
-              header CTAs feed the same tracked conversion as the form.
-
-  NAVIGATION  Two new top-level items across all pages: "LUUP Connect"
-              (financial model) and "Dual-Use Technology" (platform).
-              Offers keeps Renters + Auto Shop as sub-items. The mobile
-              hamburger menu mirrors the same structure and labels.
-
-  TRACKING    All inline GA4 / Meta snippets were removed from the six
-              pages and consolidated into one shared analytics.js.
-              Adds Google Ads conversions, Mixpanel, first-touch UTM +
-              click-ID capture, and auto-identify on lead events.
-              Facebook domain-verification meta now on every page.
-
-
-==========================================================
-3. TRACKING — edit ONE file: analytics.js
-==========================================================
-Open analytics.js. The top of the file is the only thing you ever edit:
-
-  window.LUUP_IDS = {
-    ga4:           'G-5RV23C0JFY',      <- LIVE
-    googleAds:     '',                  <- e.g. AW-123456789        (empty = off)
-    googleAdsLead: '',                  <- e.g. AW-123456789/AbC-D_e (empty = off)
-    metaPixel:     '3079517958908951',  <- LIVE
-    mixpanel:      '',                  <- Mixpanel project token   (empty = off)
-    linkedIn:      '',                  <- LinkedIn partner ID      (empty = off)
-    tiktok:        '',                  <- TikTok pixel ID          (empty = off)
-    clarity:       ''                   <- MS Clarity project ID    (empty = off)
-  };
-
-Any field left empty simply does not load. Nothing breaks, nothing to
-comment out. Fill one in and it goes live on the next page load.
-
-WHAT IS WIRED RIGHT NOW
-  GA4              G-5RV23C0JFY        page_view + all custom events
-  Meta Pixel       3079517958908951    init + PageView + <noscript> fallback,
-                                       Lead on form success, Schedule on
-                                       book-a-call
-  Google Ads       waiting on IDs      conversion fires automatically on
-                                       lead events once googleAdsLead is set
-  Mixpanel         waiting on token    every event, plus people.set on lead
-  LinkedIn /       waiting on IDs      insight tag / pixel + SubmitForm
-  TikTok / Clarity
-
-DOMAIN GUARD
-  Everything is wrapped in a luupnow.ca hostname check. Previews, staging
-  and local files fire nothing (they log to the console instead), so test
-  traffic never pollutes reporting.
-
-ATTRIBUTION (automatic, all pages)
-  Captured from the landing URL on first touch and kept in sessionStorage:
+  UTM / click IDs captured on load and kept for the whole session
+  (sessionStorage key "luup_utm"), attached to every event and posted
+  with every form:
     utm_source, utm_medium, utm_campaign, utm_content, utm_term,
-    gclid, gbraid, wbraid, fbclid, msclkid, ttclid, li_fat_id,
-    landing_page, first_referrer, first_seen_at
-  These are attached to EVERY GA4 event (gtag set), registered as Mixpanel
-  super-properties, and included in every Formspree submission — so a lead
-  that lands on /technology/ from a Meta ad and converts three pages later
-  still reports the original campaign.
+    gclid, gbraid, wbraid, fbclid, msclkid, ttclid, li_fat_id
 
-EVENTS FIRED
-  landing_page_view, navigation_click, cta_click, explore_page_click,
-  how_it_works_click, book_call_click, app_download_click, video_play,
-  video_25/50/75_percent, video_complete, faq_open, area_selected,
-  form_scroll_click, submit_request_click, invite_form_start,
-  invite_form_submit, invite_form_success (= conversion), invite_form_error
+  Form submissions POST JSON to https://formspree.io/f/xdenypay with:
+    name, email, phone, campaign, page_name, city, landing_page,
+    first_referrer + every UTM and click-ID field above.
 
-VERIFICATION
-  Meta: <meta name="facebook-domain-verification"
-        content="9fet6vb4tbm9g9sc4lm9bou29tb133"> on all seven pages,
-        plus the 9fet6...html file at the web root as a backup method.
-        Do not remove either.
-  Google Search Console / Bing: no verification token supplied yet — add a
-  <meta> to index.html or upload the HTML file they give you.
-
-HOW TO CONFIRM IT WORKS AFTER UPLOAD
-  1. GA4 > Admin > DebugView, or Realtime — load luupnow.ca/technology/
-     with ?utm_source=test&utm_campaign=smoke and submit the form.
-     You should see landing_page_view then invite_form_success carrying
-     utm_source=test.
-  2. Meta Events Manager > Test Events — same flow, expect PageView + Lead.
-  3. Mixpanel > Events (Live View) once the token is filled in.
-  4. Google Ads > Tools > Conversions — status flips from "No recent
-     conversions" after the first real submit.
-
+  Events: landing_page_view, invite_form_submit, invite_form_success
+  (counted as a LEAD — Meta "Lead" + Google Ads conversion once a
+  conversion label is set), invite_form_error, faq_open,
+  about_luup_click, app store / google play clicks.
 
 ==========================================================
-4. FORMS
+4. AFTER UPLOAD — QUICK TEST
 ==========================================================
-All five landing pages (renters, autoshop, connect, technology, influencer) POST to Formspree endpoint xdenypay and send:
-  submitted_at, first/last name, email, mobile, area (where asked),
-  campaign, source_page, form_name, page, page_url, referrer,
-  device_type, landing_page, first_referrer, first_seen_at, and the
-  full UTM + click-ID set listed above.
-Campaign / source_page values:
-  Renters -> "Renters"      form_name "Renters invite request"
-                            (also sends wave "Wave 1")
-  Auto Shop -> "Auto Shop"  form_name "Auto Shop application"
-  Connect -> "Connect"      form_name "Connect invite request"
-  Technology -> "Technology" form_name "Submit a Request"
-  Influencer -> "Influencer" form_name "Influencer sign-up"
-                            (also sends wave "Wave 1",
-                             subject "New LUUP lead — Influencer")
-On success the visitor is redirected to /thank-you/?from=<page>, and the
-Thank You page shows the matching return button:
-  ?from=renters -> "Back to Renters"      -> /renters/
-  ?from=autoshop -> "Back to Auto Shop"   -> /autoshop/
-  ?from=connect -> "Back to Connect"      -> /connect/
-  ?from=technology -> "Back to Technology" -> /technology/
-An unknown or missing ?from falls back to the Renters copy.
-EXCEPTION: /influencer/ does NOT redirect. It shows the confirmation
-inline ("Thank you! Your information has been submitted successfully.
-We'll reach out to you shortly.") and still fires invite_form_success,
-so the Meta Lead and Google Ads conversion are unaffected.
-
-CONVERSION DE-DUPLICATION
-  The Meta "Lead" event and the Google Ads conversion fire exactly ONCE per
-  submission, from analytics.js on the invite_form_success event. The pages
-  no longer fire their own Lead, and the Thank You page no longer fires one
-  on view — so Meta and Google Ads counts match Formspree submissions 1:1.
-  The Thank You page still sends thank_you_view for funnel reporting.
-
-NOTE
-  The Renters and Connect modals do not ask for an area, so the "area" field
-  arrives empty on those two. Auto Shop and Technology do collect it.
-
-Submissions land at whatever email address is configured on that
-Formspree form.
-
+  1. Open https://luupnow.ca/influencer/?utm_source=test&utm_campaign=qa
+  2. GA4 Realtime: confirm landing_page_view.
+  3. Submit the form with a real email; the Formspree entry should list
+     utm_source=test and utm_campaign=qa.
+  4. GA4 Realtime: confirm invite_form_success.
+  5. Meta Events Manager: confirm PageView and Lead.
+  6. Repeat step 1 for renters/, autoshop/, connect/ and technology/.
 
 ==========================================================
-5. SEO NOTES
+5. NOTE
 ==========================================================
-  Each landing page has canonical + OG + Twitter tags on its live URL.
-  The five landing pages are set to robots "noindex, nofollow" because
-  they are paid-traffic destinations. Remove that meta tag on any page
-  you want indexed.
-
-
-==========================================================
-6. STILL TO CONFIRM
-==========================================================
-  Mixpanel project token (analytics.js -> mixpanel)
-  Google Ads conversion ID + label (analytics.js -> googleAds, googleAdsLead)
-  connect + technology footer "Offer Terms:" currently read TBD
-  appDownloadUrl on the landing pages points at https://luupnow.ca/app
-  connect video section has no MP4 source yet
+  The home page (index.html) does not link to /influencer/ — that page
+  is a campaign landing page and is set to noindex. Tell me if you want
+  it added to the home navigation.
