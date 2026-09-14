@@ -28,13 +28,19 @@ jobs:
             const head = "staging";
             const base = "main";
 
-            const { data: existing } = await github.rest.pulls.list({
+            const { data: openPulls } = await github.rest.pulls.list({
               owner,
               repo,
               state: "open",
-              head: `${owner}:${head}`,
               base
             });
+            const repoFullName = `${owner}/${repo}`.toLowerCase();
+            const existing = openPulls.filter((pr) =>
+              pr.head.ref === head &&
+              pr.head.repo &&
+              pr.head.repo.full_name &&
+              pr.head.repo.full_name.toLowerCase() === repoFullName
+            );
 
             if (existing.length > 0) {
               core.info(`Open PR already exists: #${existing[0].number}`);
